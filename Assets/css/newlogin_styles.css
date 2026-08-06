@@ -1,0 +1,39 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+body{
+    background-image: radial-gradient(rgb(181, 180, 180), rgb(255, 255, 255));
+}
+
+h2{
+    font-size: 2rem;
+}
+
+.form{
+    
+    justify-content: center;
+    margin: 40px auto;
+    background-color: rgb(252, 252, 252);
+    padding: 3rem 5rem;
+    width: 100dvh;
+    border-radius: 10px;
+    box-shadow: 5px 5px 20px rgb(64, 64, 64);
+}
+
+.txtInput{
+    display: grid;
+    height: 1.7rem;
+    width: 70%;
+    margin: 0.5rem 0 1.5rem;
+}
+
+.formItem{
+    width: 100%;
+    display: grid;
+
+}
+

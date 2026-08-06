@@ -1,0 +1,30 @@
+nav{
+    background-color: #082055;
+}
+
+a{
+    color: white;
+    text-decoration: none;
+}
+
+li{
+    margin-left: 50px;
+    color: white;
+}
+
+h2:hover{
+    color: #C49E0D;
+}
+
+.dropdown-menu{
+    background-color: #082055;
+}
+
+h3{
+    color: white;
+}
+
+h3:hover{
+    color: #C49E0D;
+}
+

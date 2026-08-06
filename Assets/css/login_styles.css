@@ -1,0 +1,183 @@
+/* Variables de color (si usas CSS moderno / preprocesador puedes usar variables) */
+:root {
+  --color-blanco: #ffffff;
+  --color-azul-oscuro: #003e7e;
+  --color-azul-medio: #0073b1;
+  --color-texto: #333333;
+  --color-texto-sec: #666666;
+  --color-fondo: #d8d8d8; /* tono muy claro para el fondo */
+  --color-borde: #d6d6d6;
+}
+
+/* Reset básico y tipografía */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  color: var(--color-texto);
+  background-color: var(--color-fondo);
+  line-height: 1.6;
+}
+
+/* Encabezado (header) */
+header {
+  background-color: #082055;
+  color: var(--color-blanco);
+  padding: 20px 40px;
+}
+
+header nav a {
+  color: var(--color-blanco);
+  text-decoration: none;
+  margin-right: 20px;
+  font-weight: bold;
+}
+
+header nav a:hover {
+  color: #C49E0D;
+}
+
+/* Contenedor principal */
+.main-content {
+  max-width: 900px;
+  margin: 40px auto;
+  padding: 0 20px;
+  background-color: var(--color-blanco);
+  border: 1px solid var(--color-borde);
+  border-radius: 8px;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+  padding-top: 20px;
+  margin-top: 200px;
+}
+
+/* Títulos */
+.main-content h1, .main-content h2, .main-content h3 {
+  color: var(--color-azul-oscuro);
+  margin-bottom: 20px;
+}
+
+/* Párrafos y texto normal */
+.main-content p {
+  margin-bottom: 15px;
+  color: var(--color-texto);
+  box-shadow: 3px 3px 15px;
+}
+
+/* Botones */
+.btn {
+  display: inline-block;
+  background-color: var(--color-azul-oscuro);
+  color: var(--color-blanco);
+  padding: 10px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  text-decoration: none;
+  font-size: 1rem;
+  transition: background-color 0.3s ease;
+  margin-left: 350px;
+}
+
+.btn:hover {
+  background-color: #C49E0D;
+}
+
+/* Formulario */
+form {
+  margin-top: 20px;
+}
+
+form label {
+  display: block;
+  margin-bottom: 8px;
+  font-weight: bold;
+  color: var(--color-texto);  
+}
+
+form input[type="text"],
+form input[type="password"],
+form input[type="email"] {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid var(--color-borde);
+  border-radius: 4px;
+  margin-bottom: 20px;
+  font-size: 1rem;
+}
+
+form input[type="submit"] {
+  /* reutilizamos .btn si lo deseas */
+  background-color: var(--color-azul-oscuro);
+  color: var(--color-blanco);
+  padding: 10px 20px;
+  border: none;
+  border-radius: 4px;
+  font-size: 1.1rem;
+  cursor: pointer;
+  margin-bottom: 10px;
+}
+
+form input[type="submit"]:hover {
+  background-color: #C49E0D;
+}
+
+/* Pie de página */
+.footer {
+  background-color: #082055;
+  color: white;
+  text-align: center;
+  padding: 40px;
+  margin-top: 400px;
+}
+
+footer a {
+  color: var(--color-blanco);
+  text-decoration: none;
+}
+
+footer a:hover {
+  color: var(--color-azul-medio);
+}
+
+/* Estilo para el contenedor del logo */
+.logo-container {
+  display: flex;
+  align-items: center;
+  padding-right: 20px;
+}
+
+/* Estilo del logo */
+.logo {
+  height: 60px; /* Ajusta según tamaño de tu logo */
+  width: auto;
+}
+
+/* Logo dentro de su contenedor */
+.inicio-container{
+  display: inline-block;
+  margin: 0 10px;;
+}
+.logo-container {
+  float: right; /* Esto mueve el logo hacia la derecha */
+}
+
+/* Evitar que el contenido "se recupere" debajo del logo */
+header::after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+h2{
+  display: inline-block;
+  margin-left: 50px;
+}
+
+h1{
+  display: inline-block;
+  margin-left: 300px;
+}

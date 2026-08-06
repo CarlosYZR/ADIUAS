@@ -1,0 +1,107 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+body{
+  background-color: #d8d8d8;
+}
+
+.txtinput{
+  height: 20px;
+  width: 300px; 
+  font-size: large;
+}
+
+.form_container{
+  background-color: rgb(248, 247, 247);
+  margin-left: 50dvh;
+  margin-right: 50dvh;
+  margin-top: 10dvh;
+  margin-bottom: 10dvh;
+  border-radius: 20px;
+  border: black;
+  box-shadow: 3px 3px 15px;
+}
+
+.form{
+  padding-top: 10px;
+  padding-left: 20px;
+  background-color: rgb(248, 247, 247);
+  border-radius: 10px;
+}
+
+h3{
+  margin-top: 10px;
+  color: black;
+}
+
+label{
+  color: black;
+}
+
+.btn:hover{
+  background-color: #C49E0D;
+}
+
+
+.navbar{
+  background-color: #082055;
+  padding-right: 15px;
+  padding-left: 15px;
+  height: 100px;
+}
+
+a{
+  text-decoration: none;
+  color: black;
+}
+
+li{
+  display: inline-block;
+  margin-top: 30px;
+  margin-left: 30px;
+
+}
+
+h2{
+  color: white;
+}
+
+.footer{
+  background-color: #082055;
+  height: 100px;
+  text-align: center;
+  color: white;
+  padding: 40px;
+}
+
+h2:hover{
+  color: #C49E0D;
+}
+
+.terminos{
+  text-decoration:underline;
+  color: rgb(33, 33, 255);
+}
+
+form input[type="submit"] {
+  /* reutilizamos .btn si lo deseas */
+  background-color: var(--color-azul-oscuro);
+  color: var(--color-blanco);
+  padding: 10px 20px;
+  border: none;
+  border-radius: 4px;
+  font-size: 1.1rem;
+  cursor: pointer;
+  margin-bottom: 10px;
+  color: white;
+  background-color: #082055;
+  width: 120px;
+  height: 75px;
+  border-radius: 10%;
+  transition: background-color 0.3s ease;
+  margin-left: 350px;
+}
