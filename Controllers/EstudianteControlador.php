@@ -4,11 +4,9 @@
 
     class EstudianteControlador{
 
-        //Funcion del controlador para hacer el objeto
+        //Funcion del para el objeto estudiante
         public static function objetoEstudiante($DatosEstudiante){
 
-            //Hice el objeto de estudiante para que obtenga los parametros para
-            //  poder guardar a los estudiantes nuevos en la base de datos
             $ObjEstudiante = new Estudiante();
 
             if (!is_array($DatosEstudiante)){
@@ -16,8 +14,6 @@
                 return $ObjEstudiante;
             }
 
-            //El objeto estudiante seteara los parametros que vienen del array $DatosEstudiante
-            //$DatosEstudiante es un array que se declara y recibe los datos en /Views/RegistroVisita.php
             $ObjEstudiante->setId($DatosEstudiante['id'] ?? null);
             $ObjEstudiante->setNombre($DatosEstudiante[':nombre'] ?? null);
             $ObjEstudiante->setEdad($DatosEstudiante[':edad'] ?? null);

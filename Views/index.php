@@ -3,8 +3,10 @@
     session_start();
 
     if(empty($_SESSION['usuario'])){
+        
         header("Location: login.php");
         exit();
+        
     }
 
 ?>
@@ -22,9 +24,9 @@
       <body>
        
               
-          <nav class="navbar navbar-expand-lg">
+            <nav class="navbar navbar-expand-lg">
               <div class="container-fluid">
-                  <a class="navbar-brand" href="#"><img src="../assets/img/adiuas.jpg" alt="" height="77px" width="190px"></a>
+                  <a class="navbar-brand" href="#"><img src="../assets/img/adiuas.png" class="logo" height="77px" width="200px"></a>
                   <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                   <span class="navbar-toggler-icon"></span>
                   </button>
@@ -39,7 +41,7 @@
                   
       
                       <li class="nav-item">
-                          <a href="RegistroVisita.php"><h2 class="item">Registrar visita</h2></a>
+                          <h2 class="item">Registrar visita</h2>
                       </li>
       
                       <!--
@@ -54,34 +56,28 @@
                           </ul>
                       </li> -->
       
-                      <ul class="navbar-nav">
-                          <li class="nav-item dropdown">
+                    <ul class="navbar-nav">
+                        <li class="nav-item dropdown">
                           
-                              <a href="" data-bs-toggle="dropdown"><h2>Unidades</h2></a>
+                            <a href="" data-bs-toggle="dropdown"><h2>Unidades</h2></a>
                               
-                              <ul class="dropdown-menu">
-                                  <li><a class="dropdown-item" href="#"><h3>Operatividad y logistica</h3></a></li>
-                                  <li><a class="dropdown-item" href="#"><h3>Tiflotecnologias</h3></a></li>
-                                  <li><a class="dropdown-item" href="#"><h3>Psicopedagogia</h3></a></li>
-                                  <li><a class="dropdown-item" href="#"><h3>Audicion y lenguaje</h3></a></li>
-                                  <li><a class="dropdown-item" href="#"><h3>Psicologia</h3></a></li>
-                                  <li><a class="dropdown-item" href="#"><h3>Asesorias academicas y creacion de material adaptado</h3></a></li>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="#"><h3>Operatividad y logistica</h3></a></li>
+                                <li><a class="dropdown-item" href="#"><h3>Tiflotecnologias</h3></a></li>
+                                <li><a class="dropdown-item" href="#"><h3>Psicopedagogia</h3></a></li>
+                                <li><a class="dropdown-item" href="#"><h3>Audicion y lenguaje</h3></a></li>
+                                <li><a class="dropdown-item" href="#"><h3>Psicologia</h3></a></li>
+                                <li><a class="dropdown-item" href="#"><h3>Asesorias academicas y creacion de material adaptado</h3></a></li>
       
-                              </ul>
-                          </li>
-                      </ul>
+                            </ul>
+                        </li>
+                    </ul>
       
-                  </ul>
-                  <form class="d-flex">
-                      <img src="../Assets\img\icon_user.png" alt="" height="50px" width="50px"> &nbsp;&nbsp;&nbsp;
-                      <a href="" data-bs-toggle="dropdown"><h2>  <?php  echo $_SESSION['usuario'];  ?>  </h2></a>
-                      <ul class="dropdown-menu">
-                          <li class="user_list"><a href="#"><h2>Cerrar sesion</h2></a></li>
-                      </ul>
-                  </form>
-                  </div>
-              </div>
-          </nav>
+                </ul>
+                    
+                <a href="../Controllers/CerrarSesion.php"><img src="../Assets\img\icon_user.png" alt="" height="50px" width="50px"></a> &nbsp;&nbsp;&nbsp;
+                <a href="../Controllers/CerrarSesion.php"><h2>  <?php  echo $_SESSION['usuario'];  ?>  </h2></a>
+            </nav>
       
       
       

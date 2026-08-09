@@ -1,61 +1,80 @@
+<?php
+
+    session_start();
+
+    if(empty($_SESSION['usuario'])){
+        
+        header("Location: login.php");
+        exit();
+        
+    }
+
+?>
+
 
 <!DOCTYPE html>
-<html lang="es">
+<html lang="en">
 <head>
-  <meta charset="UTF-8">
-
-  <title>Bienvenido a ADIUAS</title>
-
-  <link rel="stylesheet" href="../Assets/css/login_styles.css">
-  <link rel="shortcut icon" href="../Assets/img/Logo_Uas.ico">
-  <link rel="stylesheet" type="text/css" href="../Assets/css/overhang.min.css" />
-
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="../Assets/img/Logo_Uas.ico">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <link rel="stylesheet" href="../Assets/css/login.css">
+    <title>Iniciar sesion</title>
 </head>
 <body>
-  <header>
-    <nav>
-    <div class="logo-container">
-    <img src="../Assets/img/adiuas.jpg" alt="Logo de ADIUAS" class="logo">
-  </div>
 
-  <div class="inicio-container">
-      <a href=""> <h2>Inicio</h2> </a>
-
-      <a href="https://www.uas.edu.mx/nuestra-universidad/mision-vision-y-valores"><h2>¿Quiénes somos?</h2></a>
+    <nav class="navbar navbar-expand-lg">
+              <div class="container-fluid">
+                  <a class="navbar-brand" href="#"><img src="../assets/img/adiuas.png" class="logo" height="77px" width="200px"></a>
+                  <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                  <span class="navbar-toggler-icon"></span>
+                  </button>
+                  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                  <ul class="navbar-nav me-auto mb-2 mb-lg-0">
       
-      <a href="https://www.facebook.com/UASoficial/"><h2>Contacto</h2></a>
-  </div>
+                      <!--
+                      <li class="nav-item dropdown">
+                          <a class="nav-link dropdown" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                              <h2>Unidades</h2>
+                          </a>
+                          <ul class="dropdown-menu">
+                              <li><a class="dropdown-item" href="#">Action</a></li>
+                              <li><a class="dropdown-item" href="#">Another action</a></li>
+                              <li><a class="dropdown-item" href="#">Something else here</a></li>
+                          </ul>
+                      </li> -->
 
+      
+                </ul>
+                    
+                
+            <h2>ATENCION A LA DIVERSIDAD</h2>
     </nav>
-  </header>
 
-  <div class="main-content">
-    <h1>Iniciar Sesión</h1>
-    <form id="loginform" action="../Controllers/ValidacionLogin.php" method="post">
+    
+    <div class="form-container">
 
-      <label for="username">Usuario</label>
-      <input type="text" id="username" name="input_username" autofocus required>
+        <form action="../Controllers/ValidacionLogin.php" method="post">
 
-      <label for="password">Contraseña</label>
-      <input type="password" id="password" name="input_password" required>
+            <h1>Inicia sesion:</h1>
 
-      <input type="submit" value="Ingresar" class="btn">
-      
-    </form>
-  </div>
+            <div class="form-floating mb-3">
+                <input type="text" class="form-control" id="input_username" name="input_username" placeholder=" " required>
+                <label for="floatingInput" class="form-label">Usuario</label>
+            </div>
 
-  <div class="footer">
-    <footer>
-      &copy; 2025 Programa ADIUAS — Universidad Autónoma de Sinaloa
-    </footer>
-  </div>
+            <div class="form-floating">
+                <input type="password" class="form-control" id="input_password" name="input_password" placeholder=" " required>
+                <label for="floatingPassword" class="form-label" >Contraseña</label>
+            </div>
 
-  <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
-  <script type="text/javascript" src="//ajax.googleapis.com/ajax/libs/jqueryui/1.10.4/jquery-ui.min.js"></script>
-  <script type="text/javascript" src="../Assets/js/overhang.min.js"></script>
-  <script src="..\Assets\js\app.js"></script>
+            <input type="submit" value="Ingresar" class="btn">
+
+        </form>
+
+    </div>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
 </body>
 </html>
-
-
-

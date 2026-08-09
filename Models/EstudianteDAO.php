@@ -26,19 +26,15 @@
         //Funcion para registrar estudiantes en la base de datos que se cae a pedazos
         public static function guardarDatos($Estudiante){
 
-
-            //Mi querysote
-            // Especifica las columnas entre paréntesis antes del VALUES
+            
             $Query = "INSERT INTO students (nombre, edad, genero, correo, telefono, grupo, escuela, unidad, poblacion) 
                         VALUES (:nombre, :edad, :genero, :correo, :telefono, :grupo, :escuela, :unidad, :poblacion)";
 
-            //Conectando base de datos
+
             self::getConexion();
 
-            //Guardandolo en la variable
             $Ejecucion = self::$Conexion->prepare($Query);
-
-            //Sustituyendo las plantillas dentro del arreglo 
+ 
             $DatosEstudiante = [
 
                 ":nombre" => $Estudiante->getNombre(),
@@ -53,7 +49,6 @@
 
             ];
 
-            //Ejecutando despues de sustituir con los parametros del arreglo
             $Ejecucion->execute($DatosEstudiante);
 
 
@@ -63,13 +58,10 @@
         //Funcion para mostrar los datos de la base de datos
         public static function mostrarDatos(){
 
-            //Seleccion de todos los estudiantes
             $Query = "SELECT * FROM students";
 
-            //Conexion a la base
             self::getConexion();
 
-            //Preparacion y ejecucion
             $Ejecucion = self::$Conexion->prepare($Query);
             $Ejecucion->execute();
 
@@ -97,7 +89,6 @@
             $Ejecucion = self::$Conexion->prepare($Query);
             $Ejecucion->execute();
             
-
             
         }
 

@@ -1,0 +1,121 @@
+body{
+    background-image: url("../img/Rectoría_UAS.jpg");
+}
+
+nav{
+    background-color: #082055;
+}
+
+h1{
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20%;
+    color: rgb(25, 25, 169);
+}
+
+h2{
+    color: white;
+}
+
+a{
+    color: white;
+    text-decoration: none;
+    display: block;
+}
+
+li{
+    margin-left: 50px;
+    color: white;
+}
+
+li:hover{
+    color: #C49E0D;
+}
+
+a:hover{
+    color: #C49E0D;
+}
+
+.dropdown-menu{
+    background-color: rgb(8 32 85 / 80%); 
+}
+
+h3{
+    color: white;
+}
+
+.nav-item:hover{
+    color: #C49E0D;
+}
+
+h3:hover{
+    color: #C49E0D;
+}
+
+::-webkit-scrollbar {
+    display: none;
+}
+
+
+.form-container{
+    position: fixed;
+    top: calc(50% + 70px); 
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: auto; 
+    max-width: 95vw;
+    height: 750px;
+    box-sizing: border-box;
+    resize: none;
+    overflow: hidden;
+    z-index: 999;
+    background-color: rgba(255, 255, 255, 0.866);
+    border-radius: 7%;
+    display: flex;
+    flex-direction: column;  
+    justify-content: center;   
+    align-items: center;       
+    padding: 25px;            
+    gap: 15px;
+    box-shadow: 0 5px 5px rgba(0, 0, 0, 0.312);
+}
+
+.form-control{
+    width: 580px;
+    max-width: 100%;
+    margin-bottom: 15%;
+    background-color: rgba(255, 255, 255, 0.338);
+    border: 2px solid #2e01f6;
+    font-size: 1.5rem;
+}
+
+.form-control:not(:placeholder-shown) ~ .form-control{
+    border-color: #C49E0D;
+}
+
+.btn {
+    display: flex;
+    justify-content: center; 
+    align-items: center;   
+    margin: 0 auto;  
+    display: flex;
+    height: 60px;
+    width: 170px;
+    background-color:#082055;
+    color: white;
+    border-radius: 4px;
+    text-decoration: none;
+    font-size: 1rem;
+    transition: 0.3s ease;
+}
+
+.btn:hover{
+    background-color: #C49E0D;
+    color: white;
+}
+
+
+.form-control:hover, label{
+    border-color: #ffcc01;
+}
+

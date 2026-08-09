@@ -8,12 +8,10 @@ class UsuarioControlador{
     public static function login($Usuario, $Password){
 
         $ObjUsuario = new Usuario();
-
-        
+  
 
         $ObjUsuario->setUsuario($Usuario);
         $ObjUsuario->setPassword($Password);
-
 
 
         return UsuarioDao::login($ObjUsuario);

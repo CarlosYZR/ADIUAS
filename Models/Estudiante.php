@@ -3,7 +3,6 @@
 
 class Estudiante{
 
-	//Parametros del estudiante
     private $Id;
     private $Nombre;
     private $Edad;
@@ -16,7 +15,6 @@ class Estudiante{
     private $Poblacion;
 
 
-	//Vaina y media
 
     public function getId(){
 		return $this->Id;

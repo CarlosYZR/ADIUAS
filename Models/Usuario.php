@@ -2,7 +2,6 @@
 
 class Usuario{
 
-    //Parametros del usuario
     private $Id;
     private $Usuario;
     private $Password;
