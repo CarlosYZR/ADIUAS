@@ -33,7 +33,7 @@
                   <div class="collapse navbar-collapse" id="navbarSupportedContent">
                   <ul class="navbar-nav me-auto mb-2 mb-lg-0">
                       <li class="nav-item">
-                          <a href="login.php"><h2 class="item">Inicio</h2></a>
+                          <a href="../Controllers/CerrarSesion.php"><h2 class="item">Salir</h2></a>
                       </li>
                       <li class="nav-item">
                           <a href="informes.php"><h2 class="item">Informes</h2></a>
@@ -41,7 +41,7 @@
                   
       
                       <li class="nav-item">
-                          <h2 class="item">Registrar visita</h2>
+                          <a href="RegistroVisita.php"><h2 class="item">Registrar visita</h2></a>
                       </li>
       
                       <!--
@@ -62,12 +62,12 @@
                             <a href="" data-bs-toggle="dropdown"><h2>Unidades</h2></a>
                               
                             <ul class="dropdown-menu">
-                                <li><a class="dropdown-item" href="#"><h3>Operatividad y logistica</h3></a></li>
-                                <li><a class="dropdown-item" href="#"><h3>Tiflotecnologias</h3></a></li>
-                                <li><a class="dropdown-item" href="#"><h3>Psicopedagogia</h3></a></li>
-                                <li><a class="dropdown-item" href="#"><h3>Audicion y lenguaje</h3></a></li>
-                                <li><a class="dropdown-item" href="#"><h3>Psicologia</h3></a></li>
-                                <li><a class="dropdown-item" href="#"><h3>Asesorias academicas y creacion de material adaptado</h3></a></li>
+                                <li><a class="dropdown-item" href="informes.php?id=Operatividad"><h3>Operatividad y logistica</h3></a></li>
+                                <li><a class="dropdown-item" href="informes.php"><h3>Tiflotecnologias</h3></a></li>
+                                <li><a class="dropdown-item" href="informes.php"><h3>Psicopedagogia</h3></a></li>
+                                <li><a class="dropdown-item" href="informes.php"><h3>Audicion y lenguaje</h3></a></li>
+                                <li><a class="dropdown-item" href="informes.php"><h3>Psicologia</h3></a></li>
+                                <li><a class="dropdown-item" href="informes.php"><h3>Asesorias academicas y creacion de material adaptado</h3></a></li>
       
                             </ul>
                         </li>
@@ -75,8 +75,12 @@
       
                 </ul>
                     
-                <a href="../Controllers/CerrarSesion.php"><img src="../Assets\img\icon_user.png" alt="" height="50px" width="50px"></a> &nbsp;&nbsp;&nbsp;
-                <a href="../Controllers/CerrarSesion.php"><h2>  <?php  echo $_SESSION['usuario'];  ?>  </h2></a>
+                <a href="../Controllers/CerrarSesion.php">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" fill="currentColor" class="bi bi-person-fill" viewBox="0 0 16 16">
+                        <path d="M3 14s-1 0-1-1 1-4 6-4 6 3 6 4-1 1-1 1zm5-6a3 3 0 1 0 0-6 3 3 0 0 0 0 6"/>
+                    </svg>
+                </a> &nbsp;&nbsp;&nbsp;
+                <a href="../Controllers/CerrarSesion.php"><h2><?php  echo $_SESSION['usuario'];  ?></h2></a>
             </nav>
       
       
@@ -84,13 +88,13 @@
           <div id="carouselExample" class="carousel slide">
               <div class="carousel-inner">
                   <div class="carousel-item">
-                  <img src="../Assets/img/algo.jpg" class="d-block w-100" alt="...">
+                  <img src="../Assets/img/carousel2.jpg" class="d-block w-100" alt="...">
                   </div>
                   <div class="carousel-item active">
-                  <img src="../Assets/img/uastrans.jpeg" class="d-block w-100" alt="...">
+                  <img src="../Assets/img/carrusel-banner.png" class="d-block w-100" alt="...">
                   </div>
                   <div class="carousel-item">
-                  <img src="../Assets/img/chikichiki.jpg" class="d-block w-100" alt="..." height="750px">
+                  <img src="../Assets/img/carousel.jpg" class="d-block w-100" alt="..." >
                   </div>
               </div>
               <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">

@@ -1,5 +1,6 @@
 <?php
 
+
 include "../Config/Conexion.php";
 include "../Models/Usuario.php";
 
@@ -25,8 +26,7 @@ class UsuarioDAO extends Conexion{
 
     //Metodo de para poder logearse
     public static function login($Usuario){
-
-        
+      
         $Query = "SELECT * FROM users WHERE usuario = :usuario AND pass = :password";
 
         self::getConexion();
@@ -40,7 +40,17 @@ class UsuarioDAO extends Conexion{
 
         $Resultado->execute();
 
-        return $Resultado->rowCount() > 0;            
+        if($Resultado->rowCount() > 0){
+
+            $Derechos = $Resultado->fetch(PDO::FETCH_ASSOC);
+
+            session_start();
+            $_SESSION['admin'] = $Derechos['admin'];
+
+            return TRUE;
+
+        }
+
 
     
     }

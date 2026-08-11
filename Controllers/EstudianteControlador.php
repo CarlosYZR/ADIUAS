@@ -43,9 +43,9 @@
         //Metodo para mostrar los datos del estudiante
         public static function mostrarDatos(){
 
-            $listaEstudiantes = EstudianteDAO::mostrarDatos();
+            $MostrarEstudiantes = EstudianteDAO::mostrarDatos();
     
-            return $listaEstudiantes;
+            return $MostrarEstudiantes;
 
         }
     

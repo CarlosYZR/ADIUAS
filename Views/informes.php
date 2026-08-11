@@ -1,8 +1,22 @@
 <?php
 
+    session_start();
+
     include("../Controllers/EstudianteControlador.php");
 
-    $estudiantes = EstudianteControlador::mostrarDatos();
+
+    if(!empty($_SESSION['usuario'])){
+     
+        $estudiantes = EstudianteControlador::mostrarDatos();
+
+    }else{
+
+        header("Location: ../Views/login.php");
+        exit();
+
+    }
+
+    
 
 ?>
 
@@ -14,8 +28,58 @@
     <title>Adiuas | Informes</title>
     <link rel="shortcut icon" href="../Assets/img/Logo_Uas.ico">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <link rel="stylesheet" href="../Assets/css/index.css">
 </head>
 <body>
+
+
+    <nav class="navbar navbar-expand-lg">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#"><img src="../assets/img/adiuas.png" class="logo" height="77px" width="200px"></a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a href="index.php"><h2 class="item">Inicio</h2></a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a href="informes.php"><h2 class="item">Informes</h2></a>
+                    </li>
+                  
+      
+                    <li class="nav-item">
+                        <a href="RegistroVisita.php"><h2 class="item">Registrar visita</h2></a>
+                    </li>
+
+                    <ul class="navbar-nav">
+                        <li class="nav-item dropdown">
+                          
+                            <a href="" data-bs-toggle="dropdown"><h2>Unidades</h2></a>
+                              
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="#"><h3>Operatividad y logistica</h3></a></li>
+                                <li><a class="dropdown-item" href="#"><h3>Tiflotecnologias</h3></a></li>
+                                <li><a class="dropdown-item" href="#"><h3>Psicopedagogia</h3></a></li>
+                                <li><a class="dropdown-item" href="#"><h3>Audicion y lenguaje</h3></a></li>
+                                <li><a class="dropdown-item" href="#"><h3>Psicologia</h3></a></li>
+                                <li><a class="dropdown-item" href="#"><h3>Asesorias academicas y creacion de material adaptado</h3></a></li>
+      
+                            </ul>
+                        </li>
+                    </ul>
+      
+                </ul>
+                    
+        <a href="../Controllers/CerrarSesion.php"><img src="../Assets\img\icon_user.png" alt="" height="50px" width="50px"></a> &nbsp;&nbsp;&nbsp;
+        <a href="../Controllers/CerrarSesion.php"><h2>  <?php  echo $_SESSION['usuario'];  ?>  </h2></a>
+    </nav>
+
+
+
+
     <script>
         function eliminar(){
             var respuesta = confirm("¿Esta seguro que desea eliminar el alumno?");
@@ -78,12 +142,16 @@
     <?php
 
         if(!empty($_GET['id'])){
+
             $id = $_GET['id'];
             EstudianteControlador::eliminarDatos($id);
+
         }
 
-    } else {
+    }else{
+
         echo "No hay datos que mostrar";
+        
     }
 
 ?>

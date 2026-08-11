@@ -1,5 +1,6 @@
 <?php
 
+
     include "../Models/Estudiante.php";
     include "../Config/Conexion.php";
 
@@ -13,7 +14,6 @@
             self::$Conexion = Conexion::conectar();
 
         }
-
         
         //El metodo para la desconexion
         private static function desconectar(){
@@ -22,7 +22,6 @@
 
         }
             
-
         //Funcion para registrar estudiantes en la base de datos que se cae a pedazos
         public static function guardarDatos($Estudiante){
 
@@ -53,7 +52,6 @@
 
 
         }
-
     
         //Funcion para mostrar los datos de la base de datos
         public static function mostrarDatos(){
@@ -77,7 +75,6 @@
 
         }
 
-
         //Funcion para actualizar los datos de los alumnos
         public static function actualizarDatos($Estudiante){
             
@@ -92,7 +89,6 @@
             
         }
 
-
         //FUNCION PARA ELIMINAR DATOS
         public static function eliminarDatos($Estudiante){
 
@@ -105,13 +101,26 @@
             $DatosEstudiante = [":id" => $Estudiante->getId()];
 
  
-            if($Ejecucion->Execute($DatosEstudiante)){
-                echo '<div class="alert alert-success">Estudiante eliminado correctamente</div>';
+            if($_SESSION['admin'] == 1){
+
+                if($Ejecucion->Execute($DatosEstudiante)){
+
+                    echo '<div class="alert alert-success">Estudiante eliminado correctamente</div>';
             
+                }else{
+
+                    echo '<div class="alert alert-danger">Error</div>';
+                    header("Location: informes.php");
+                    exit();
+
+                }
+
             }else{
-                echo '<div class="alert alert-danger">Error</div>';
-                header("Location: informes.php");
+
+                echo '<div class="alert alert-danger">No posees los permisos necesarios</div>';
+
             }
+
 
         }
 

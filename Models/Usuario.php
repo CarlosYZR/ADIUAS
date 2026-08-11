@@ -6,8 +6,8 @@ class Usuario{
     private $Usuario;
     private $Password;
 
-    public function getId(){
-		return $this->Id; 
+    public static function getId(){
+		return $this->Id;
 	}
 
 	public function setId($Id){
@@ -28,6 +28,14 @@ class Usuario{
 
 	public function setPassword($Password){
 		$this->Password = $Password;
+	}
+
+	public function getDerecho(){
+		return $this->Derecho;
+	}
+
+	public function setDerecho($Derecho){
+		$this->Derecho = $Derecho;
 	}
 
 }

@@ -1,7 +1,9 @@
 <?php
 
-    include("../Controllers/UsuarioControlador.php");
     session_start();
+
+    include("../Controllers/UsuarioControlador.php");
+    
 
     if ($_SERVER['REQUEST_METHOD'] === 'POST') {
         
@@ -11,6 +13,7 @@
         if (UsuarioControlador::login($TxtUsuario, $TxtPassword)) {
             
             $_SESSION['usuario'] = $TxtUsuario;
+
             header("Location: ../Views/index.php");
             exit();
 

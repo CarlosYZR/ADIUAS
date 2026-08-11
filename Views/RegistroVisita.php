@@ -3,8 +3,10 @@
     session_start();
 
     if(empty($_SESSION['usuario'])){
+
         header("Location: login.php");
         exit();
+        
     }
 
 ?>
@@ -14,7 +16,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Adiuas</title>
+    <title>Registro de Visita</title>
     <link rel="stylesheet" href="../Assets/css/RegistroVisita_styles.css">
     <link rel="shortcut icon" href="../Assets/img/Logo_Uas.ico">
     <link rel="stylesheet" type="text/css" href="../Assets/css/overhang.min.css" />
@@ -289,26 +291,22 @@
         isset($_POST["poblacion"]))
     {
 
-        ///Array para no tener que hacer una variable para cada parametro
-            $DatosEstudiante = [
+        $DatosEstudiante = [
 
-                ':nombre' => $_POST['nombre'],
-                ':edad' => $_POST['edad'],
-                ':genero' => $_POST['genero'],
-                ':correo' => $_POST['correo'],
-                ':telefono' => $_POST['telefono'],
-                ':grupo' => $_POST['grupo'],
-                ':escuela' => $_POST['escuela'],
-                ':unidad' => $_POST['unidad'],
-                ':poblacion' => $_POST['poblacion']
+            ':nombre' => $_POST['nombre'],
+            ':edad' => $_POST['edad'],
+            ':genero' => $_POST['genero'],
+            ':correo' => $_POST['correo'],
+            ':telefono' => $_POST['telefono'],
+            ':grupo' => $_POST['grupo'],
+            ':escuela' => $_POST['escuela'],
+            ':unidad' => $_POST['unidad'],
+            ':poblacion' => $_POST['poblacion']
 
-            ];
+        ];
 
-            //Funcion
-            EstudianteControlador::guardarDatos($DatosEstudiante);
-
-    
-
+        //Funcion
+        EstudianteControlador::guardarDatos($DatosEstudiante);
         
     }
 

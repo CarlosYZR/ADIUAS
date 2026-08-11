@@ -1,14 +1,13 @@
 <?php
 
-    session_start();
+  session_start();
 
-    if(empty($_SESSION['usuario'])){
-        
-        header("Location: login.php");
-        exit();
-        
-    }
+  if(!empty($_SESSION['usuario'])){
 
+    session_destroy();
+
+  }
+  
 ?>
 
 
@@ -33,23 +32,10 @@
                   <div class="collapse navbar-collapse" id="navbarSupportedContent">
                   <ul class="navbar-nav me-auto mb-2 mb-lg-0">
       
-                      <!--
-                      <li class="nav-item dropdown">
-                          <a class="nav-link dropdown" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                              <h2>Unidades</h2>
-                          </a>
-                          <ul class="dropdown-menu">
-                              <li><a class="dropdown-item" href="#">Action</a></li>
-                              <li><a class="dropdown-item" href="#">Another action</a></li>
-                              <li><a class="dropdown-item" href="#">Something else here</a></li>
-                          </ul>
-                      </li> -->
-
-      
                 </ul>
                     
                 
-            <h2>ATENCION A LA DIVERSIDAD</h2>
+            <h2>UNIVERSIDAD AUTONOMA DE SINALOA</h2>
     </nav>
 
     
@@ -60,7 +46,10 @@
             <h1>Inicia sesion:</h1>
 
             <div class="form-floating mb-3">
+
                 <input type="text" class="form-control" id="input_username" name="input_username" placeholder=" " required>
+
+
                 <label for="floatingInput" class="form-label">Usuario</label>
             </div>
 
