@@ -31,7 +31,7 @@
 
             <ul>
 
-                <li> <a href="index.php">    <h2>Inicio</h2>             </a> </li>
+                <li> <a href="../index.php">    <h2>Inicio</h2>             </a> </li>
                 <li> <a href="#">    <h2>Ciclo escolar</h2>      </a> </li>
                 <li> <a href="#">    <h2>Departamento</h2>       </a> </li>
 
@@ -47,7 +47,7 @@
         <!--################# FORMULARIO ###################################-->
         <div class="form">
 
-            <form action="#" method="post" class="form_itself" id="formestudiante">
+            <form action="../Contorllers/ValidacionRegistro.php" method="post" class="form_itself" id="formestudiante">
 
                 <h3>Nombre:</h3>
                 <input type="text" name="nombre" id="" class="txtinput" required> <br>
@@ -273,43 +273,3 @@
 </body>
 </html>
 
-<?php
-
-    include "../Controllers/EstudianteControlador.php";
-
-
-    if(
-
-        isset($_POST["nombre"]) ||
-        isset($_POST['edad']) ||
-        isset($_POST['genero']) ||
-        isset($_POST['correo']) ||
-        isset($_POST['telefono']) ||
-        isset($_POST['grupo']) ||
-        isset($_POST['escuela']) ||
-        isset($_POST['unidad']) ||
-        isset($_POST["poblacion"]))
-    {
-
-        $DatosEstudiante = [
-
-            ':nombre' => $_POST['nombre'],
-            ':edad' => $_POST['edad'],
-            ':genero' => $_POST['genero'],
-            ':correo' => $_POST['correo'],
-            ':telefono' => $_POST['telefono'],
-            ':grupo' => $_POST['grupo'],
-            ':escuela' => $_POST['escuela'],
-            ':unidad' => $_POST['unidad'],
-            ':poblacion' => $_POST['poblacion']
-
-        ];
-
-        //Funcion
-        EstudianteControlador::guardarDatos($DatosEstudiante);
-        
-    }
-
-
-
-?>

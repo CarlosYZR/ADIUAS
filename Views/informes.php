@@ -42,7 +42,7 @@
                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
                 <ul class="navbar-nav me-auto mb-2 mb-lg-0">
                     <li class="nav-item">
-                        <a href="index.php"><h2 class="item">Inicio</h2></a>
+                        <a href="../index.php"><h2 class="item">Inicio</h2></a>
                     </li>
 
                     <li class="nav-item">
@@ -73,7 +73,11 @@
       
                 </ul>
                     
-        <a href="../Controllers/CerrarSesion.php"><img src="../Assets\img\icon_user.png" alt="" height="50px" width="50px"></a> &nbsp;&nbsp;&nbsp;
+        <a href="../Controllers/CerrarSesion.php">
+            <svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" fill="currentColor" class="bi bi-person-fill" viewBox="0 0 16 16">
+                    <path d="M3 14s-1 0-1-1 1-4 6-4 6 3 6 4-1 1-1 1zm5-6a3 3 0 1 0 0-6 3 3 0 0 0 0 6"/>
+            </svg>
+        </a> &nbsp;&nbsp;&nbsp;
         <a href="../Controllers/CerrarSesion.php"><h2>  <?php  echo $_SESSION['usuario'];  ?>  </h2></a>
     </nav>
 

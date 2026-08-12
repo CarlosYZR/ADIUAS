@@ -62,12 +62,12 @@
                             <a href="" data-bs-toggle="dropdown"><h2>Unidades</h2></a>
                               
                             <ul class="dropdown-menu">
-                                <li><a class="dropdown-item" href="informes.php?id=Operatividad"><h3>Operatividad y logistica</h3></a></li>
-                                <li><a class="dropdown-item" href="informes.php"><h3>Tiflotecnologias</h3></a></li>
-                                <li><a class="dropdown-item" href="informes.php"><h3>Psicopedagogia</h3></a></li>
-                                <li><a class="dropdown-item" href="informes.php"><h3>Audicion y lenguaje</h3></a></li>
-                                <li><a class="dropdown-item" href="informes.php"><h3>Psicologia</h3></a></li>
-                                <li><a class="dropdown-item" href="informes.php"><h3>Asesorias academicas y creacion de material adaptado</h3></a></li>
+                                <li><a class="dropdown-item" href="../Views/informes.php"><h3>Operatividad y logistica</h3></a></li>
+                                <li><a class="dropdown-item" href="../Views/informes.php"><h3>Tiflotecnologias</h3></a></li>
+                                <li><a class="dropdown-item" href="../Views/informes.php"><h3>Psicopedagogia</h3></a></li>
+                                <li><a class="dropdown-item" href="../Views/informes.php"><h3>Audicion y lenguaje</h3></a></li>
+                                <li><a class="dropdown-item" href="../Views/informes.php"><h3>Psicologia</h3></a></li>
+                                <li><a class="dropdown-item" href="../Views/informes.php"><h3>Asesorias academicas y creacion de material adaptado</h3></a></li>
       
                             </ul>
                         </li>
