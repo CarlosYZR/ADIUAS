@@ -69,7 +69,7 @@ h3:hover{
     resize: none;
     overflow: hidden;
     z-index: 999;
-    background-color: rgba(255, 255, 255, 0.684);
+    background-color: rgba(255, 255, 255, 0.849);
     border-radius: 7%;
     display: flex;
     flex-direction: column;  
@@ -84,7 +84,7 @@ h3:hover{
     width: 580px;
     max-width: 100%;
     margin-bottom: 15%;
-    background-color: rgba(255, 255, 255, 0.338);
+    background-color: rgba(255, 255, 255, 0.472);
     border: 2px solid #1d00a088;
     font-size: 1.5rem;
 }
@@ -100,7 +100,7 @@ h3:hover{
     margin: 0 auto;  
     display: flex;
     height: 60px;
-    width: 170px;
+    width: 300px;
     background-color:#082055;
     color: white;
     border-radius: 4px;

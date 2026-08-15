@@ -1,3 +1,7 @@
+body{
+    background-color: #ece9e9ce;
+}
+
 nav{
     background-color: #082055;
 }
@@ -39,4 +43,16 @@ h3:hover{
 
 ::-webkit-scrollbar {
     display: none;
+}
+
+.carousel{
+    position: fixed;
+    width: 70%;
+    height: 50%;
+    padding: 25px;            
+    
+}
+
+.carousel img{
+    border-radius: 20px;
 }

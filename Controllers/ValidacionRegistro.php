@@ -3,25 +3,40 @@
     include "../Controllers/EstudianteControlador.php";
 
 
-    if($_SERVER['METHOD_REQUEST'] === 'POST'){
+    if($_SERVER['REQUEST_METHOD'] === 'POST'){
 
         $Valores = ['nombre', 'edad', 'genero', 'correo', 'telefono', 'grupo', 'escuela', 'unidad', 'poblacion'];
         $DatosEstudiante = [];
         $Token = TRUE;
 
-
         foreach($Valores as $Valor){
+
+
+            //###########              RECORDATORIO PARA MI MISMO                     ###################
+            //########### EL TRIM NO ESTA FUNCIONANDO DENTRO DEL IF Y NO SE POR QUE   ##################
+            $ValorSinEspacios = trim($_POST[$Valor]);
             
-            if(!isset($_POST($Valor)) || $Valor === ''){
+            if(!isset($_POST[$Valor]) || $ValorSinEspacios === ''){
                 
                 $Token = FALSE;
                 break;
 
-            }else{
-
-                $DatosEstudiante = 
-
             }
+
+            $DatosEstudiante[':'.$Valor] = trim($_POST[$Valor]);
+
+        }
+
+        if($Token){
+
+            EstudianteControlador::guardarDatos($DatosEstudiante);
+            header("Location: ../Views/RegistroVisita.php");
+            exit();
+
+        }else{
+
+            header("Location: ../Views/RegistroVisita.php");
+            exit();
 
         }
 
@@ -35,16 +50,7 @@
 
 
 
-
-
-
-
-
-
-
-
-
-
+    /*
     if(
 
         isset($_POST["nombre"]) ||
@@ -76,7 +82,7 @@
         //Funcion
         EstudianteControlador::guardarDatos($DatosEstudiante);
         
-    }
+    }*/
 
 
 

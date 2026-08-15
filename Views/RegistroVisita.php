@@ -31,7 +31,7 @@
 
             <ul>
 
-                <li> <a href="../index.php">    <h2>Inicio</h2>             </a> </li>
+                <li> <a href="index.php">    <h2>Inicio</h2>             </a> </li>
                 <li> <a href="#">    <h2>Ciclo escolar</h2>      </a> </li>
                 <li> <a href="#">    <h2>Departamento</h2>       </a> </li>
 
@@ -47,7 +47,7 @@
         <!--################# FORMULARIO ###################################-->
         <div class="form">
 
-            <form action="../Contorllers/ValidacionRegistro.php" method="post" class="form_itself" id="formestudiante">
+            <form action="../Controllers/ValidacionRegistro.php" method="post" class="form_itself" id="formestudiante">
 
                 <h3>Nombre:</h3>
                 <input type="text" name="nombre" id="" class="txtinput" required> <br>

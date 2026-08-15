@@ -62,12 +62,12 @@
                             <a href="" data-bs-toggle="dropdown"><h2>Unidades</h2></a>
                               
                             <ul class="dropdown-menu">
-                                <li><a class="dropdown-item" href="../Views/informes.php"><h3>Operatividad y logistica</h3></a></li>
-                                <li><a class="dropdown-item" href="../Views/informes.php"><h3>Tiflotecnologias</h3></a></li>
-                                <li><a class="dropdown-item" href="../Views/informes.php"><h3>Psicopedagogia</h3></a></li>
-                                <li><a class="dropdown-item" href="../Views/informes.php"><h3>Audicion y lenguaje</h3></a></li>
-                                <li><a class="dropdown-item" href="../Views/informes.php"><h3>Psicologia</h3></a></li>
-                                <li><a class="dropdown-item" href="../Views/informes.php"><h3>Asesorias academicas y creacion de material adaptado</h3></a></li>
+                                <li><a class="dropdown-item" href="informes.php"><h3>Operatividad y logistica</h3></a></li>
+                                <li><a class="dropdown-item" href="informes.php"><h3>Tiflotecnologias</h3></a></li>
+                                <li><a class="dropdown-item" href="informes.php"><h3>Psicopedagogia</h3></a></li>
+                                <li><a class="dropdown-item" href="informes.php"><h3>Audicion y lenguaje</h3></a></li>
+                                <li><a class="dropdown-item" href="informes.php"><h3>Psicologia</h3></a></li>
+                                <li><a class="dropdown-item" href="informes.php"><h3>Asesorias academicas y creacion de material adaptado</h3></a></li>
       
                             </ul>
                         </li>
@@ -80,7 +80,7 @@
                         <path d="M3 14s-1 0-1-1 1-4 6-4 6 3 6 4-1 1-1 1zm5-6a3 3 0 1 0 0-6 3 3 0 0 0 0 6"/>
                     </svg>
                 </a> &nbsp;&nbsp;&nbsp;
-                <a href="../Controllers/CerrarSesion.php"><h2><?php  echo $_SESSION['usuario'];  ?></h2></a>
+                <a href="../Controllers/CerrarSesion.php"><h2><?php  echo(strtoupper($_SESSION['usuario']));  ?></h2></a>
             </nav>
       
       
