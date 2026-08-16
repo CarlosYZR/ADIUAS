@@ -81,9 +81,7 @@ h3:hover{
 }
 
 .form-control{
-    width: 580px;
-    max-width: 100%;
-    margin-bottom: 15%;
+    margin-top: 5%;
     background-color: rgba(255, 255, 255, 0.472);
     border: 2px solid #1d00a088;
     font-size: 1.5rem;
@@ -95,10 +93,11 @@ h3:hover{
 
 .btn {
     display: flex;
-    justify-content: center; 
-    align-items: center;   
-    margin: 0 auto;  
-    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: flex-end;
+    align-items: flex-end;
+    align-content: unset;
     height: 60px;
     width: 300px;
     background-color:#082055;
@@ -119,3 +118,50 @@ h3:hover{
     border-color: #ffcc01;
 }
 
+.form-login-container{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: flex-start;
+    align-items: flex-start;
+    align-content: unset;
+    gap: 24px;
+}
+
+.form-login-container form{
+    background-color: rgba(255, 255, 255, 0.849);
+    border-radius: 7%;
+    width: clamp(500px, 30vw, 600px);
+    height: clamp(500px, 30vw, 600px);
+}
+
+.form-login-container input{
+    margin-left: 10%;
+    width: 80%;
+    height: clamp(40px, 2vw, 55px);
+    box-sizing: border-box;
+    border-top-color: transparent;
+    border-left-color: transparent;
+    border-right-color: transparent;
+}
+
+.title{
+    font-size: clamp(50px, 2vw, 100px);
+    margin-left: 10%;
+    font-style: normal;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin-top: 5%;
+}
+
+.form-login-container a{
+    color: #C49E0D;
+    margin-left: 10%;
+    margin-top: 2%;
+    margin-bottom: 2%;
+    width: 30%;
+
+}
+
+.form-login-container a:hover{
+    color:#1d00a088;
+}
