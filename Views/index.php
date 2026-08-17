@@ -38,6 +38,23 @@
                       <li class="nav-item">
                           <a href="informes.php"><h2 class="item">Informes</h2></a>
                       </li>
+
+                      <ul class="navbar-nav">
+                        <li class="nav-item dropdown">
+                          
+                            <a href="" data-bs-toggle="dropdown"><h2>Ciclo escolar</h2></a>
+                              
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="informes.php"><h3>2025 - 2026</h3></a></li>
+                                <li><a class="dropdown-item" href="informes.php"><h3>Tiflotecnologias</h3></a></li>
+                                <li><a class="dropdown-item" href="informes.php"><h3>Psicopedagogia</h3></a></li>
+                                <li><a class="dropdown-item" href="informes.php"><h3>Audicion y lenguaje</h3></a></li>
+                                <li><a class="dropdown-item" href="informes.php"><h3>Psicologia</h3></a></li>
+                                <li><a class="dropdown-item" href="informes.php"><h3>Asesorias academicas y creacion de material adaptado</h3></a></li>
+      
+                            </ul>
+                        </li>
+                    </ul>
                   
       
                       <li class="nav-item">
@@ -83,19 +100,24 @@
                 <a href="../Controllers/CerrarSesion.php"><h2><?php  echo(strtoupper($_SESSION['usuario']));  ?></h2></a>
             </nav>
       
-      
-      
+
+
           <div id="carouselExample" class="carousel slide">
               <div class="carousel-inner">
-                  <div class="carousel-item">
-                  <img src="../Assets/img/carousel2.jpg" class="d-block w-100" alt="...">
-                  </div>
-                  <div class="carousel-item active">
-                  <img src="../Assets/img/carrusel-banner.png" class="d-block w-100" alt="...">
-                  </div>
-                  <div class="carousel-item">
-                  <img src="../Assets/img/carousel.jpg" class="d-block w-100" alt="..." >
-                  </div>
+
+                <!-- ##################### EVENTOS DEL AÑO ########################### -->
+                <div class="carousel-item">
+                    <img src="../Assets/img/carousel2.jpg" class="d-block w-100" alt="...">
+                </div>
+
+                <div class="carousel-item active">
+                    <img src="../Assets/img/carrusel-banner.png" class="d-block w-100" alt="...">
+                </div>
+
+                <div class="carousel-item">
+                    <img src="../Assets/img/carousel.jpg" class="d-block w-100" alt="..." >
+                </div>
+
               </div>
               <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
                   <span class="carousel-control-prev-icon" aria-hidden="true"></span>
