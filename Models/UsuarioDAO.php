@@ -27,25 +27,21 @@ class UsuarioDAO extends Conexion{
     //Metodo de para poder logearse
     public static function login($Usuario){
       
-        $Query = "SELECT * FROM users WHERE usuario = :usuario AND pass = :password";
+        $Query = "SELECT * FROM users WHERE usuario = :usuario";
 
         self::getConexion();
-
-       
-        $Resultado = self::$Conexion->prepare($Query);
-
-        
+   
+        $Resultado = self::$Conexion->prepare($Query);   
         $Resultado->bindValue(":usuario", $Usuario->getUsuario());
-        $Resultado->bindValue(":password", $Usuario->getPassword());
 
         $Resultado->execute();
 
-        if($Resultado->rowCount() > 0){
+        $ArrayUsuario = $Resultado->fetch(PDO::FETCH_ASSOC);
 
-            $Derechos = $Resultado->fetch(PDO::FETCH_ASSOC);
+        if($ArrayUsuario['usuario'] && password_verify($Usuario->getPassword(), $ArrayUsuario['pass'])){
 
             session_start();
-            $_SESSION['admin'] = $Derechos['admin'];
+            $_SESSION['admin'] = $ArrayUsuario['admin'];
 
             return TRUE;
 
