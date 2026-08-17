@@ -1,167 +1,370 @@
-body{
-    background-image: url("../img/Rectoría_UAS.jpg");
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 
-nav{
+html,
+body {
+    width: 100%;
+    min-height: 100%;
+}
+
+body {
+    min-height: 100vh;
+
+    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+
+    background-image:
+        linear-gradient(
+            rgba(0, 18, 55, 0.10),
+            rgba(0, 18, 55, 0.10)
+        ),
+        url("../img/Rectoría_UAS.jpg");
+
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+
+    color: #111;
+}
+
+
+/* =========================================
+   ENCABEZADO
+========================================= */
+
+.top-header {
+    width: 100%;
+    background-color: #082055;
+    box-shadow: 0 4px 18px rgba(0, 0, 0, 0.22);
+}
+
+.brand-area {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+
+/* =========================================
+   LOGO
+========================================= */
+
+.brand-link {
+    width: 100%;
+    height: 105px;
+
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+
+    padding-left: 28px;
+
+    overflow: hidden;
+
     background-color: #082055;
 }
 
-h1{
-    display: flex;
-    justify-content: center;
-    margin-bottom: 20%;
-    color: rgb(25, 25, 169);
-}
+.logo {
+    width: 190px;
+    height: 80px;
 
-h2{
-    color: white;
-}
+    object-fit: contain;
+    object-position: left center;
 
-a{
-    color: white;
-    text-decoration: none;
     display: block;
 }
 
-li{
-    margin-left: 50px;
-    color: white;
-}
 
-li:hover{
-    color: #C49E0D;
-}
+/* =========================================
+   TÍTULO UNIVERSIDAD
+========================================= */
 
-a:hover{
-    color: #C49E0D;
-}
+.university-title {
+    width: 100%;
 
-.dropdown-menu{
-    background-color: rgb(8 32 85 / 80%); 
-}
+    padding: 11px 28px;
 
-h3{
-    color: white;
-}
+    color: #ffffff;
 
-.nav-item:hover{
-    color: #C49E0D;
-}
+    background-color: #0b2a66;
 
-h3:hover{
-    color: #C49E0D;
-}
+    font-family: Georgia, "Times New Roman", serif;
 
-::-webkit-scrollbar {
-    display: none;
+    font-size: clamp(18px, 1.4vw, 24px);
+
+    font-weight: 700;
+
+    letter-spacing: 1.4px;
 }
 
 
-.form-container{
-    position: fixed;
-    top: calc(50% + 70px); 
-    left: 50%;
-    transform: translate(-50%, -50%);
-    width: auto; 
-    max-width: 95vw;
-    height: 750px;
-    box-sizing: border-box;
-    resize: none;
-    overflow: hidden;
-    z-index: 999;
-    background-color: rgba(255, 255, 255, 0.849);
-    border-radius: 7%;
+/* =========================================
+   ÁREA PRINCIPAL
+========================================= */
+
+.login-page {
+    width: 100%;
+
+    min-height: calc(100vh - 150px);
+
     display: flex;
-    flex-direction: column;  
-    justify-content: center;   
-    align-items: center;       
-    padding: 25px;            
-    gap: 15px;  
-    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.783);
+    align-items: center;
+    justify-content: flex-start;
+
+    padding: clamp(30px, 5vw, 75px);
 }
 
-.form-control{
-    margin-top: 5%;
-    background-color: rgba(255, 255, 255, 0.472);
-    border: 2px solid #1d00a088;
-    font-size: 1.5rem;
+
+/* =========================================
+   FORMULARIO
+========================================= */
+
+.form-login-container {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
 }
 
-.form-control:not(:placeholder-shown) ~ .form-control{
-    border-color: #C49E0D;
+.login-form {
+    width: clamp(360px, 30vw, 470px);
+
+    padding: 42px 38px 38px;
+
+    border-radius: 24px;
+
+    background: rgba(255, 255, 255, 0.90);
+
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+
+    border: 1px solid rgba(255, 255, 255, 0.50);
+
+    box-shadow:
+        0 18px 45px rgba(0, 0, 0, 0.28);
 }
+
+
+/* =========================================
+   TÍTULO DEL LOGIN
+========================================= */
+
+.title {
+    margin-bottom: 30px;
+
+    font-size: clamp(34px, 2.5vw, 46px);
+
+    font-weight: 500;
+
+    color: #082055;
+
+    letter-spacing: -0.5px;
+}
+
+
+/* =========================================
+   CAMPOS
+========================================= */
+
+.form-content {
+    width: 100%;
+}
+
+.form-control {
+    width: 100%;
+    height: 50px;
+
+    margin-bottom: 18px;
+
+    padding: 0 4px;
+
+    font-size: 1.1rem;
+
+    color: #222;
+
+    background: transparent;
+
+    border: none;
+
+    border-bottom: 2px solid #9b90d5;
+
+    outline: none;
+
+    transition: 0.25s ease;
+}
+
+.form-control::placeholder {
+    color: #666;
+}
+
+.form-control:hover {
+    border-bottom-color: #C49E0D;
+}
+
+.form-control:focus {
+    border-bottom-color: #082055;
+}
+
+
+/* =========================================
+   CONTRASEÑA
+========================================= */
+
+.forgot-password {
+    display: inline-block;
+
+    margin-top: -3px;
+    margin-bottom: 22px;
+
+    color: #B68E00;
+
+    font-family: Georgia, "Times New Roman", serif;
+
+    font-size: 0.95rem;
+
+    text-decoration: none;
+
+    transition: 0.2s ease;
+}
+
+.forgot-password:hover {
+    color: #082055;
+}
+
+
+/* =========================================
+   BOTÓN
+========================================= */
 
 .btn {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: nowrap;
-    justify-content: flex-end;
-    align-items: flex-end;
-    align-content: unset;
-    height: 60px;
-    width: 300px;
-    background-color:#082055;
+    width: 100%;
+    height: 50px;
+
+    border: none;
+    border-radius: 6px;
+
+    background-color: #082055;
+
     color: white;
-    border-radius: 4px;
-    text-decoration: none;
+
     font-size: 1rem;
-    transition: 0.3s ease;
+    font-weight: 600;
+
+    cursor: pointer;
+
+    transition:
+        background-color 0.25s ease,
+        transform 0.15s ease,
+        box-shadow 0.25s ease;
 }
 
-.btn:hover{
+.btn:hover {
     background-color: #C49E0D;
-    color: white;
+
+    box-shadow:
+        0 6px 18px rgba(0, 0, 0, 0.20);
+}
+
+.btn:active {
+    transform: translateY(1px);
 }
 
 
-.form-control:hover, label{
-    border-color: #ffcc01;
-}
+/* =========================================
+   TABLETS
+========================================= */
 
-.form-login-container{
-    display: flex;
-    flex-direction: row;
-    flex-wrap: nowrap;
-    justify-content: flex-start;
-    align-items: flex-start;
-    align-content: unset;
-    gap: 24px;
-}
+@media (max-width: 900px) {
 
-.form-login-container form{
-    background-color: rgba(255, 255, 255, 0.849);
-    border-radius: 7%;
-    width: clamp(500px, 30vw, 600px);
-    height: clamp(500px, 30vw, 600px);
-}
+    .login-page {
+        justify-content: center;
+        padding: 35px 20px;
+    }
 
-.form-login-container input{
-    margin-left: 10%;
-    width: 80%;
-    height: clamp(40px, 2vw, 55px);
-    box-sizing: border-box;
-    border-top-color: transparent;
-    border-left-color: transparent;
-    border-right-color: transparent;
-}
-
-.title{
-    font-size: clamp(50px, 2vw, 100px);
-    margin-left: 10%;
-    font-style: normal;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    margin-top: 5%;
-}
-
-.form-login-container a{
-    color: #C49E0D;
-    margin-left: 10%;
-    margin-top: 2%;
-    margin-bottom: 2%;
-    width: 30%;
+    .login-form {
+        width: min(100%, 470px);
+    }
 
 }
 
-.form-login-container a:hover{
-    color:#1d00a088;
+
+/* =========================================
+   CELULARES
+========================================= */
+
+@media (max-width: 600px) {
+
+    body {
+        background-attachment: scroll;
+    }
+
+    .brand-link {
+        height: 90px;
+
+        justify-content: center;
+
+        padding-left: 0;
+    }
+
+    .logo {
+        width: 150px;
+        height: 65px;
+    }
+
+    .university-title {
+        text-align: center;
+
+        padding: 10px 12px;
+
+        font-size: 15px;
+
+        letter-spacing: 0.8px;
+    }
+
+    .login-page {
+        min-height: calc(100vh - 130px);
+
+        padding: 25px 15px;
+    }
+
+    .login-form {
+        width: 100%;
+
+        padding: 32px 24px;
+
+        border-radius: 20px;
+    }
+
+    .title {
+        font-size: 32px;
+    }
+
+}
+
+
+/* =========================================
+   CELULARES PEQUEÑOS
+========================================= */
+
+@media (max-width: 400px) {
+
+    .logo {
+        width: 130px;
+        height: 58px;
+    }
+
+    .university-title {
+        font-size: 13px;
+    }
+
+    .login-form {
+        padding: 28px 20px;
+    }
+
+    .title {
+        font-size: 29px;
+    }
+
 }
