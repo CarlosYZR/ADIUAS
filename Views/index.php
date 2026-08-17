@@ -45,12 +45,11 @@
                             <a href="" data-bs-toggle="dropdown"><h2>Ciclo escolar</h2></a>
                               
                             <ul class="dropdown-menu">
+
+                                <li><a class="dropdown-item" href="informes.php"><h3>2024 - 2025</h3></a></li>
                                 <li><a class="dropdown-item" href="informes.php"><h3>2025 - 2026</h3></a></li>
-                                <li><a class="dropdown-item" href="informes.php"><h3>Tiflotecnologias</h3></a></li>
-                                <li><a class="dropdown-item" href="informes.php"><h3>Psicopedagogia</h3></a></li>
-                                <li><a class="dropdown-item" href="informes.php"><h3>Audicion y lenguaje</h3></a></li>
-                                <li><a class="dropdown-item" href="informes.php"><h3>Psicologia</h3></a></li>
-                                <li><a class="dropdown-item" href="informes.php"><h3>Asesorias academicas y creacion de material adaptado</h3></a></li>
+                                <li><a class="dropdown-item" href="informes.php"><h3>2026-2027</h3></a></li>
+                                <li><a class="dropdown-item" href="informes.php"><h3>2027-2028</h3></a></li>
       
                             </ul>
                         </li>
