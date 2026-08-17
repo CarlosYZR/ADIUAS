@@ -10,7 +10,8 @@
         $TxtUsuario = $_POST["input_username"] ?? '';
         $TxtPassword = $_POST["input_password"] ?? '';
 
-        if (UsuarioControlador::login($TxtUsuario, $TxtPassword)) {
+
+        if(UsuarioControlador::login($TxtUsuario, $TxtPassword)){
             
             $_SESSION['usuario'] = $TxtUsuario;
 
