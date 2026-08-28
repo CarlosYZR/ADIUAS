@@ -1,5 +1,7 @@
 <?php
 
+    include("../Controllers/UsuarioControlador.php");
+
     session_start();
 
     if(empty($_SESSION['usuario'])){
@@ -32,9 +34,11 @@
                   </button>
                   <div class="collapse navbar-collapse" id="navbarSupportedContent">
                   <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+
                       <li class="nav-item">
                           <a href="../Controllers/CerrarSesion.php"><h2 class="item">Salir</h2></a>
                       </li>
+
                       <li class="nav-item">
                           <a href="informes.php"><h2 class="item">Informes</h2></a>
                       </li>
@@ -48,8 +52,8 @@
 
                                 <li><a class="dropdown-item" href="informes.php"><h3>2024 - 2025</h3></a></li>
                                 <li><a class="dropdown-item" href="informes.php"><h3>2025 - 2026</h3></a></li>
-                                <li><a class="dropdown-item" href="informes.php"><h3>2026-2027</h3></a></li>
-                                <li><a class="dropdown-item" href="informes.php"><h3>2027-2028</h3></a></li>
+                                <li><a class="dropdown-item" href="informes.php"><h3>2026 - 2027</h3></a></li>
+                                <li><a class="dropdown-item" href="informes.php"><h3>2027 - 2028</h3></a></li>
       
                             </ul>
                         </li>
@@ -128,13 +132,9 @@
               </button>
           </div>
       
-      
-      
-          <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
       </body>
       </html>
-
-
-
 
 

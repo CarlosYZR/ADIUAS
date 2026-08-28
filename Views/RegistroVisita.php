@@ -16,30 +16,91 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Registro de Visita</title>
-    <link rel="stylesheet" href="../Assets/css/RegistroVisita_styles.css">
+    <title>Registro de Visita</title>   
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <link rel="stylesheet" href="../Assets/css/registro.css">
     <link rel="shortcut icon" href="../Assets/img/Logo_Uas.ico">
-    <link rel="stylesheet" type="text/css" href="../Assets/css/overhang.min.css" />
 </head>
 <body>
     
     <!--##################### BARRA DE NAVEGACION ########################-->
 
-    <nav class="navbar">
+    <nav class="navbar navbar-expand-lg">
+              <div class="container-fluid">
+                  <a class="navbar-brand" href="#"><img src="../assets/img/adiuas.png" class="logo" height="77px" width="200px"></a>
+                  <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                  <span class="navbar-toggler-icon"></span>
+                  </button>
+                  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                  <ul class="navbar-nav me-auto mb-2 mb-lg-0">
 
-        <div class="navdiv">
+                      <li class="nav-item">
+                          <a href="../Controllers/CerrarSesion.php"><h2 class="item">Salir</h2></a>
+                      </li>
 
-            <ul>
+                      <li class="nav-item">
+                          <a href="informes.php"><h2 class="item">Informes</h2></a>
+                      </li>
 
-                <li> <a href="index.php">    <h2>Inicio</h2>             </a> </li>
-                <li> <a href="#">    <h2>Ciclo escolar</h2>      </a> </li>
-                <li> <a href="#">    <h2>Departamento</h2>       </a> </li>
+                      <ul class="navbar-nav">
+                        <li class="nav-item dropdown">
+                          
+                            <a href="" data-bs-toggle="dropdown"><h2>Ciclo escolar</h2></a>
+                              
+                            <ul class="dropdown-menu">
 
-            </ul>
-
-        </div>
-
-    </nav>
+                                <li><a class="dropdown-item" href="informes.php"><h3>2024 - 2025</h3></a></li>
+                                <li><a class="dropdown-item" href="informes.php"><h3>2025 - 2026</h3></a></li>
+                                <li><a class="dropdown-item" href="informes.php"><h3>2026 - 2027</h3></a></li>
+                                <li><a class="dropdown-item" href="informes.php"><h3>2027 - 2028</h3></a></li>
+      
+                            </ul>
+                        </li>
+                    </ul>
+                  
+      
+                      <li class="nav-item">
+                          <a href="RegistroVisita.php"><h2 class="item">Registrar visita</h2></a>
+                      </li>
+      
+                      <!--
+                      <li class="nav-item dropdown">
+                          <a class="nav-link dropdown" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                              <h2>Unidades</h2>
+                          </a>
+                          <ul class="dropdown-menu">
+                              <li><a class="dropdown-item" href="#">Action</a></li>
+                              <li><a class="dropdown-item" href="#">Another action</a></li>
+                              <li><a class="dropdown-item" href="#">Something else here</a></li>
+                          </ul>
+                      </li> -->
+      
+                    <ul class="navbar-nav">
+                        <li class="nav-item dropdown">
+                          
+                            <a href="" data-bs-toggle="dropdown"><h2>Unidades</h2></a>
+                              
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="informes.php"><h3>Operatividad y logistica</h3></a></li>
+                                <li><a class="dropdown-item" href="informes.php"><h3>Tiflotecnologias</h3></a></li>
+                                <li><a class="dropdown-item" href="informes.php"><h3>Psicopedagogia</h3></a></li>
+                                <li><a class="dropdown-item" href="informes.php"><h3>Audicion y lenguaje</h3></a></li>
+                                <li><a class="dropdown-item" href="informes.php"><h3>Psicologia</h3></a></li>
+                                <li><a class="dropdown-item" href="informes.php"><h3>Asesorias academicas y creacion de material adaptado</h3></a></li>
+      
+                            </ul>
+                        </li>
+                    </ul>
+      
+                </ul>
+                    
+                <a href="../Controllers/CerrarSesion.php">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" fill="currentColor" class="bi bi-person-fill" viewBox="0 0 16 16">
+                        <path d="M3 14s-1 0-1-1 1-4 6-4 6 3 6 4-1 1-1 1zm5-6a3 3 0 1 0 0-6 3 3 0 0 0 0 6"/>
+                    </svg>
+                </a> &nbsp;&nbsp;&nbsp;
+                <a href="../Controllers/CerrarSesion.php"><h2><?php  echo(strtoupper($_SESSION['usuario']));  ?></h2></a>
+            </nav>
 
     <!--################### CONTENEDOR DEL FORMULARIO #######################-->
     <div class="form_container">

@@ -20,7 +20,7 @@
 
         }else{
             
-            header("Location: ../Views/login.php?error=Algo salio mal");
+            header("Location: ../Views/login.php?error=Algo_salio_mal");
             exit();
         }
 

@@ -10,8 +10,10 @@
             $ObjEstudiante = new Estudiante();
 
             if (!is_array($DatosEstudiante)){
+
                 $ObjEstudiante->setId($DatosEstudiante);
                 return $ObjEstudiante;
+                
             }
 
             $ObjEstudiante->setId($DatosEstudiante['id'] ?? null);
@@ -24,7 +26,6 @@
             $ObjEstudiante->setEscuela($DatosEstudiante[':escuela'] ?? null);
             $ObjEstudiante->setUnidad($DatosEstudiante[':unidad'] ?? null);
             $ObjEstudiante->setPoblacion($DatosEstudiante[':poblacion'] ?? null);
-
 
             //retorno de mi objeto
             return $ObjEstudiante;

@@ -1,6 +1,5 @@
 <?php
 
-
     include "../Models/Estudiante.php";
     include "../Config/Conexion.php";
 
@@ -56,7 +55,7 @@
         //Funcion para mostrar los datos de la base de datos
         public static function mostrarDatos(){
 
-            $Query = "SELECT * FROM students";
+            $Query = "SELECT * FROM students LIMIT 50";
 
             self::getConexion();
 
@@ -79,12 +78,35 @@
         public static function actualizarDatos($Estudiante){
             
             $Query = "UPDATE (nombre, edad, genero, correo, telefono, grupo, escuela, unidad, poblacion)
-            FROM students SET () WHERE id = (:id)";
+            FROM students SET (:nombre, :edad, :genero, :correo, :telefono, :grupo, :escuela, :unidad, :poblacion)
+            WHERE id = (:id)";
+
+            $DatosNuevos = [
+                ":nombre" => $Estudiante->getNombre(),
+                ":edad" => $Estudiante->getEdad(),
+                ':genero' => $Estudiante->getGenero(),
+                ':correo' => $Estudiante->getCorreo(),
+                ':telefono' => $Estudiante->getTelefono(),
+                ':grupo' => $Estudiante->getGrupo(),
+                ':escuela' => $Estudiante->getEscuela(),
+                ':unidad' => $Estudiante->getUnidad(),
+                ':poblacion' => $Estudiante->getPoblacion()
+            ];
         
             self::getConexion();
 
             $Ejecucion = self::$Conexion->prepare($Query);
-            $Ejecucion->execute();
+            
+            if($Ejecucion->execute($DatosNuevos)){
+
+                echo '<div class="alert alert-success">Estudiante actualizado correctamente</div>';
+
+            }else{
+                
+                echo '<div class="alert alert-danger">Error al actualizar el estudiante</div>';
+                header("Location: informes.php");
+                exit();
+            }
             
             
         }
