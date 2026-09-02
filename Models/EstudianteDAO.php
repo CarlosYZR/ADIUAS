@@ -52,7 +52,7 @@
 
         }
     
-        //Funcion para mostrar los datos de la base de datos
+        //Funcion para mostrar los datos de la base de datos (no recibe parametros)
         public static function mostrarDatos(){
 
             $Query = "SELECT * FROM students LIMIT 50";
