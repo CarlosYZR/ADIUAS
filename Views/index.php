@@ -38,7 +38,13 @@
 
                         
                       <li class="nav-item">   
-                        <a href="informes.php"> <h2 class="item">Informes</h2></a>
+                        <a href="informes.php">
+                            <h2 class="item">
+                                <svg style="margin-bottom: 4px;" xmlns="http://www.w3.org/2000/svg" width="50" height="45" fill="currentColor" class="bi bi-list" viewBox="0 0 16 16">
+                                    <path fill-rule="evenodd" d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5"/>
+                                </svg>Informes
+                            </h2>
+                        </a>
                       </li>
 
                       <ul class="navbar-nav">
@@ -59,7 +65,14 @@
                   
       
                       <li class="nav-item">
-                          <a href="RegistroVisita.php"><h2 class="item">Registrar visita</h2></a>
+                          <a href="RegistroVisita.php">
+                            <h2 class="item">
+                                <svg style="margin-bottom: 5px;" xmlns="http://www.w3.org/2000/svg" width="50" height="45" fill="currentColor" class="bi bi-person-plus-fill" viewBox="0 0 16 16">
+                                    <path d="M1 14s-1 0-1-1 1-4 6-4 6 3 6 4-1 1-1 1zm5-6a3 3 0 1 0 0-6 3 3 0 0 0 0 6"/>
+                                    <path fill-rule="evenodd" d="M13.5 5a.5.5 0 0 1 .5.5V7h1.5a.5.5 0 0 1 0 1H14v1.5a.5.5 0 0 1-1 0V8h-1.5a.5.5 0 0 1 0-1H13V5.5a.5.5 0 0 1 .5-.5"/>
+                                </svg>Registrar visita
+                            </h2>
+                          </a>
                       </li>
     
       

@@ -1,9 +1,12 @@
 body{
-    background-color: #ece9e9ce;
+    background: linear-gradient(to bottom, #D8DBE2, #02254F);
+    /*#D8DBE2 ,#D8DBE2,*/
+    background-size: cover;
+    background-repeat: no-repeat;
 }
 
 nav{
-    background-color: #082055;
+    background-color: #02254F;
 }
 
 a{
@@ -63,4 +66,11 @@ h3:hover{
     height: 50%;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     font-size: 20px;
+}
+
+.card-body{
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.783);
+    border-radius: 10px;
+    background-color: #D8DBE2;
+    color: #000000;
 }
