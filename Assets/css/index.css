@@ -1,8 +1,6 @@
 body{
-    background: linear-gradient(to bottom, #D8DBE2, #02254F);
+    background: #D8DBE2;
     /*#D8DBE2 ,#D8DBE2,*/
-    background-size: cover;
-    background-repeat: no-repeat;
 }
 
 nav{
@@ -26,6 +24,10 @@ li:hover{
 
 a:hover{
     color: #C49E0D;
+}
+
+h2{
+    margin-left: 10px;
 }
 
 .dropdown-menu{
@@ -69,8 +71,12 @@ h3:hover{
 }
 
 .card-body{
+    background-color: rgba(249, 249, 249, 0.472);
     box-shadow: 0 5px 20px rgba(0, 0, 0, 0.783);
     border-radius: 10px;
-    background-color: #D8DBE2;
     color: #000000;
+}
+
+.logo{
+    border-radius: 10px;
 }

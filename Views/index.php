@@ -50,7 +50,14 @@
                       <ul class="navbar-nav">
                         <li class="nav-item dropdown">
                           
-                            <a href="" data-bs-toggle="dropdown"><h2>Ciclo escolar</h2></a>
+                            <a href="" data-bs-toggle="dropdown">
+                                <h2>
+                                    <svg style="margin-bottom: 4px;" xmlns="http://www.w3.org/2000/svg" width="50" height="40" fill="currentColor" class="bi bi-backpack-fill" viewBox="0 0 16 16">
+                                        <path d="M5 13v-3h4v.5a.5.5 0 0 0 1 0V10h1v3z"/>
+                                        <path d="M6 2v.341C3.67 3.165 2 5.388 2 8v5.5A2.5 2.5 0 0 0 4.5 16h7a2.5 2.5 0 0 0 2.5-2.5V8a6 6 0 0 0-4-5.659V2a2 2 0 1 0-4 0m2-1a1 1 0 0 1 1 1v.083a6 6 0 0 0-2 0V2a1 1 0 0 1 1-1m0 3a4 4 0 0 1 3.96 3.43.5.5 0 1 1-.99.14 3 3 0 0 0-5.94 0 .5.5 0 1 1-.99-.14A4 4 0 0 1 8 4M4.5 9h7a.5.5 0 0 1 .5.5v4a.5.5 0 0 1-.5.5h-7a.5.5 0 0 1-.5-.5v-4a.5.5 0 0 1 .5-.5"/>
+                                    </svg>Ciclo escolar
+                                </h2>
+                            </a>
                               
                             <ul class="dropdown-menu">
 
@@ -67,7 +74,7 @@
                       <li class="nav-item">
                           <a href="RegistroVisita.php">
                             <h2 class="item">
-                                <svg style="margin-bottom: 5px;" xmlns="http://www.w3.org/2000/svg" width="50" height="45" fill="currentColor" class="bi bi-person-plus-fill" viewBox="0 0 16 16">
+                                <svg style="margin-bottom: 5px;" xmlns="http://www.w3.org/2000/svg" width="50" height="40" fill="currentColor" class="bi bi-person-plus-fill" viewBox="0 0 16 16">
                                     <path d="M1 14s-1 0-1-1 1-4 6-4 6 3 6 4-1 1-1 1zm5-6a3 3 0 1 0 0-6 3 3 0 0 0 0 6"/>
                                     <path fill-rule="evenodd" d="M13.5 5a.5.5 0 0 1 .5.5V7h1.5a.5.5 0 0 1 0 1H14v1.5a.5.5 0 0 1-1 0V8h-1.5a.5.5 0 0 1 0-1H13V5.5a.5.5 0 0 1 .5-.5"/>
                                 </svg>Registrar visita
@@ -79,7 +86,15 @@
                     <ul class="navbar-nav">
                         <li class="nav-item dropdown">
                           
-                            <a href="" data-bs-toggle="dropdown"><h2>Unidades</h2></a>
+                            <a href="" data-bs-toggle="dropdown">
+                                <h2>
+                                    <svg style="margin-bottom: 5px;" xmlns="http://www.w3.org/2000/svg" width="50" height="37" fill="currentColor" class="bi bi-journal-bookmark-fill" viewBox="0 0 16 16">
+                                        <path fill-rule="evenodd" d="M6 1h6v7a.5.5 0 0 1-.757.429L9 7.083 6.757 8.43A.5.5 0 0 1 6 8z"/>
+                                        <path d="M3 0h10a2 2 0 0 1 2 2v12a2 2 0 0 1-2 2H3a2 2 0 0 1-2-2v-1h1v1a1 1 0 0 0 1 1h10a1 1 0 0 0 1-1V2a1 1 0 0 0-1-1H3a1 1 0 0 0-1 1v1H1V2a2 2 0 0 1 2-2"/>
+                                        <path d="M1 5v-.5a.5.5 0 0 1 1 0V5h.5a.5.5 0 0 1 0 1h-2a.5.5 0 0 1 0-1zm0 3v-.5a.5.5 0 0 1 1 0V8h.5a.5.5 0 0 1 0 1h-2a.5.5 0 0 1 0-1zm0 3v-.5a.5.5 0 0 1 1 0v.5h.5a.5.5 0 0 1 0 1h-2a.5.5 0 0 1 0-1z"/>
+                                    </svg>Unidades
+                                </h2>
+                            </a>
                               
                             <ul class="dropdown-menu">
                                 <li><a class="dropdown-item" href="informes.php"><h3>Operatividad y logistica</h3></a></li>

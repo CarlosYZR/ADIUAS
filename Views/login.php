@@ -43,7 +43,7 @@
 
         <form action="../Controllers/ValidacionLogin.php" method="post">
 
-            <h1>Inicia sesion:</h1>
+            <h1>Inicia sesion</h1>
 
             <div class="form-floating mb-3">
 
