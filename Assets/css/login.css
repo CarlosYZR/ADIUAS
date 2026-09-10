@@ -7,6 +7,10 @@ body{
     background-size: cover;
 }
 
+main {
+  min-height: calc(100vh - 104px); /* altura de tu navbar */
+}
+
 nav{
     background-color: #082055;
 }
@@ -82,7 +86,7 @@ h3:hover{
     align-items: center;       
     padding: 25px;            
     gap: 15px;  
-    box-shadow: 0 5px 20px rgba(165, 165, 165, 0.994);
+    box-shadow: 0 5px 20px rgba(143, 143, 143, 0.994);
     backdrop-filter: blur(5px);
 }
 

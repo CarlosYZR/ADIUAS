@@ -3,7 +3,9 @@
 }
 
 body{
-    background: #D8DBE2;
+    background-size: cover;
+    background-image: url("../img/Rectoría_UAS.jpg");
+    /*background: #D8DBE2;*/
     /*#D8DBE2 ,#D8DBE2,*/
 }
 
@@ -54,7 +56,7 @@ h3:hover{
     display: none;
 }
 
-.carousel{
+/*.carousel{
     position: fixed;
     width: 70%;
     height: 50%;
@@ -63,24 +65,21 @@ h3:hover{
 
 .carousel img{
     border-radius: 20px;
-}
+}*/
 
-.container{
+/*.container{
     margin-top: 30px;
     margin-left: 73%;
     width: 50%;
     height: 50%;
     font-size: 20px;
 }
-
-.card-body{
-    background-color: rgba(249, 249, 249, 0.472);
-    box-shadow: 0 5px 20px rgba(247, 247, 247, 0.783);
-    border-radius: 10px;
-    color: #000000;
-    backdrop-filter: blur(5px);
-}
-
+*/
 .logo{
     border-radius: 10px;
+}
+
+.card{
+    display: flex;
+    height: 50%;
 }

@@ -1,5 +1,6 @@
 body {
     background-image: url("../img/Rectoría_UAS.jpg");
+    background-size: cover;
 }
 
 nav {
@@ -79,3 +80,23 @@ p{
     font-family: 'Arial', sans-serif;
     font-size: 20px;
 }
+
+.parent {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: repeat(5, 1fr);
+    gap: 50px;
+}
+    
+.div2 {
+    background-color: #fbfbfb2e;
+    backdrop-filter: blur(10px);
+    grid-column: span 3 / span 3;
+    grid-row: span 3 / span 3;
+    grid-column-start: 2;
+    grid-row-start: 2;
+    border-radius: 10px;
+    box-shadow: 0 5px 20px rgba(165, 165, 165, 0.994);
+}
+        
+        
