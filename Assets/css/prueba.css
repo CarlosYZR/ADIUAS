@@ -1,0 +1,55 @@
+body{
+    background-color: rgb(221, 220, 217);
+        display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: center;
+    align-content: flex-start;
+}
+
+.container{
+    width: 90%;
+    height: 90vh;
+    min-height: 10vh;
+    background-color: rgba(194, 83, 83, 0.74);
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: flex-start;
+    align-items: center;
+    align-content: flex-start;
+    gap: 20px;
+}
+
+.filter{
+    margin-top: 10px;
+    width: 90%;
+    height: 20vh;
+    background-color: rgba(167, 100, 12, 0.74);
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-items: center;
+    gap: 20px;
+}
+
+.filter div{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    align-items: flex-start;
+    align-content: flex-start;
+    margin-left: 2vh;
+}
+
+.filter h3{
+    margin-bottom: 2px;
+}
+
+.table{
+    width: 10%;
+    height: 90px;
+    background-color: rgba(194, 83, 83, 0.74);
+}
