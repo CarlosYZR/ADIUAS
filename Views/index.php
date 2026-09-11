@@ -146,7 +146,7 @@ if (empty($_SESSION['usuario'])) {
                     </ul>
 
                 </ul>
-
+<a href="../Views/informes2.php">HOLA</a>
                 <a href="../Controllers/CerrarSesion.php">
                     <svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" fill="currentColor"
                         class="bi bi-person-fill" viewBox="0 0 16 16">
@@ -156,6 +156,7 @@ if (empty($_SESSION['usuario'])) {
                 <a href="../Controllers/CerrarSesion.php">
                     <h2><?php echo (strtoupper($_SESSION['usuario'])); ?></h2>
                 </a>
+                
     </nav>
 
 
@@ -212,7 +213,7 @@ if (empty($_SESSION['usuario'])) {
 
         </div>
     </div>
-
+    
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
