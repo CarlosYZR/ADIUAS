@@ -144,22 +144,11 @@
                     <option value="20">Diversidad cultural</option>
                 </select>
             </div>
-            <button>Buscar</button>
+            <button id="search">Buscar</button>
         </div>
         <div ><!-- Div donde se mostrara la tabla -->
-            <table class="table">
-                <th>Nombre</th>
-                <th>Correo</th>
-                <th>Población</th>
-                <th>Unidad</th>
-                <th>Genero</th>
-                <th>Edad</th>
-                <th>Situación de Vulnerabilidad</th>
-                <th>Telefono</th>
-                <th>Escuela</th>
-                <th>Acción</th>
-            </table>
         </div>
     </div>
+    <script src="reporte.js"></script>
 </body>
 </html>

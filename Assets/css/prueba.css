@@ -23,7 +23,7 @@ body{
 }
 
 .filter{
-    margin-top: 10px;
+    margin-top: 15px;
     width: 90%;
     height: 20vh;
     background-color: rgba(167, 100, 12, 0.74);
@@ -48,8 +48,9 @@ body{
     margin-bottom: 2px;
 }
 
-.table{
-    width: 10%;
-    height: 90px;
+.data{
+    width: 165vh;
+    height: 20vh;
+    min-height: 10vh;
     background-color: rgba(194, 83, 83, 0.74);
 }

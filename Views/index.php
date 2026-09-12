@@ -146,7 +146,7 @@ if (empty($_SESSION['usuario'])) {
                     </ul>
 
                 </ul>
-<a href="../Views/informes2.php">HOLA</a>
+                <a href="../Views/informes2.php">Acceso a Informes 2</a>
                 <a href="../Controllers/CerrarSesion.php">
                     <svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" fill="currentColor"
                         class="bi bi-person-fill" viewBox="0 0 16 16">
