@@ -118,7 +118,7 @@
                     <option value="2">Mujer</option>
                 </select>
                 <h3>Edad</h3>
-                <input type="number" id="age">
+                <input type="number" id="5">
                 <h3>Situación de Vulnerabilidad</h3>
                 <select name="" id="6"><!-- Situación de Vulnerabilidad -->
                     <option selected disabled>Seleccionar</option>

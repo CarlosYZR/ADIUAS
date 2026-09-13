@@ -1,0 +1,20 @@
+
+insert into adiuas.vulnerabilidad (idvulnerabilidad, vulnerabilidad) values (3, "Sordera" );
+insert into adiuas.vulnerabilidad (idvulnerabilidad, vulnerabilidad) values (4, "Hipoacusia" );
+insert into adiuas.vulnerabilidad (idvulnerabilidad, vulnerabilidad) values (5, "Discapacidad motriz fisica" );
+insert into adiuas.vulnerabilidad (idvulnerabilidad, vulnerabilidad) values (6, "Discapacidad motriz neuromotora" );
+insert into adiuas.vulnerabilidad (idvulnerabilidad, vulnerabilidad) values (7, "Discapacidad intelectual" );
+insert into adiuas.vulnerabilidad (idvulnerabilidad, vulnerabilidad) values (8, "Sindrome de down" );
+insert into adiuas.vulnerabilidad (idvulnerabilidad, vulnerabilidad) values (9, "Discapacidad multiple" );
+insert into adiuas.vulnerabilidad (idvulnerabilidad, vulnerabilidad) values (10, "Deficit de atencion por hiperactividad" );
+insert into adiuas.vulnerabilidad (idvulnerabilidad, vulnerabilidad) values (11, "Trastorno mental o psicosocial" );
+insert into adiuas.vulnerabilidad (idvulnerabilidad, vulnerabilidad) values (12, "Autismo" );
+insert into adiuas.vulnerabilidad (idvulnerabilidad, vulnerabilidad) values (13, "Sindrome de Asperger" );
+insert into adiuas.vulnerabilidad (idvulnerabilidad, vulnerabilidad) values (14, "Sindrome de Reet" );
+insert into adiuas.vulnerabilidad (idvulnerabilidad, vulnerabilidad) values (15, "Trastorno generalizado del desarrollo no especificad" );
+insert into adiuas.vulnerabilidad (idvulnerabilidad, vulnerabilidad) values (16, "Problemas de conducta" );
+insert into adiuas.vulnerabilidad (idvulnerabilidad, vulnerabilidad) values (17, "Trastornos de aprendizaje en lectura (Dislexia)" );
+insert into adiuas.vulnerabilidad (idvulnerabilidad, vulnerabilidad) values (18, "Trastorno de aprendizaje en matematicas (discalculia)" );
+insert into adiuas.vulnerabilidad (idvulnerabilidad, vulnerabilidad) values (19, "Trastornos de aprendizaje en expresion escrita" );
+insert into adiuas.vulnerabilidad (idvulnerabilidad, vulnerabilidad) values (20, "Diversidad cultural" );
+select * from adiuas.vulnerabilidad;
