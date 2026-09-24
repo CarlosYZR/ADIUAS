@@ -27,7 +27,7 @@
             <div><!-- Escolar -->
                 <h3>Población</h3>
                 <select name="" id="1"><!-- Población -->
-                    <option selected disabled>Seleccionar</option>
+                    <option selected value ="0" >Seleccionar</option>
                     <option value="1">Estudiante</option>
                     <option value="2">Padres / Tutor familiar</option>
                     <option value="3">Responsable de Tutorías</option>
@@ -39,7 +39,7 @@
                 </select>
                 <h3>Unidad Academica</h3>
                 <select name="" id="2"><!-- Unidad -->
-                    <option selected disabled>Seleccionar</option>
+                    <option selected value ="0" >Seleccionar</option>
                     <option value="1">Coordiacion</option>
                     <option value="2">Audicion y lenguaje</option>
                     <option value="3">Psicologia</option>
@@ -50,7 +50,7 @@
                 </select>
                 <h3>Escuela</h3>
                 <select name="" id="3"><!-- Escuela -->
-                    <option selected disabled>Seleccione</option>
+                    <option selected value ="0">Seleccione</option>
                     <option value="1">Escuela preparatoria 2 de Octubre ( culiacancito )</option>
                     <option value="2">Escuela preparatoria 8 de Julio ( El tamarindo )</option>
                     <option value="3">Escuela preparatoria Augusto Cesar Sadino</option>
@@ -113,15 +113,15 @@
             <div><!-- Personal -->
                 <h3>Genero</h3>
                 <select name="" id="4"><!--Genero-->
-                    <option selected disabled >Seleccione</option>
-                    <option value="1">Hombre</option>
-                    <option value="2">Mujer</option>
+                    <option selected value ="0" >Seleccione</option>
+                    <option value="1">masculino</option>
+                    <option value="2">femenino</option>
                 </select>
                 <h3>Edad</h3>
-                <input type="number" id="5">
+                <input type="number" id="5" value ="0">
                 <h3>Situación de Vulnerabilidad</h3>
                 <select name="" id="6"><!-- Situación de Vulnerabilidad -->
-                    <option selected disabled>Seleccionar</option>
+                    <option selected value ="0">Seleccionar</option>
                     <option value="1">Ceguera</option>
                     <option value="2">Baja vision</option>
                     <option value="3">Sordera</option>
@@ -147,6 +147,8 @@
             <button id="search">Buscar</button>
         </div>
         <div ><!-- Div donde se mostrara la tabla -->
+            <h1>Usuarios</h1>
+                <ul id="listaUsuarios"></ul>
         </div>
     </div>
     <script src="reporte.js"></script>
