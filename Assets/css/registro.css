@@ -1,0 +1,46 @@
+body{
+  background-color: #ece9e9ce;
+}
+
+nav{
+  background-color: #082055;
+}
+
+a{
+  color: white;
+    text-decoration: none;
+    display: block;
+}
+
+li{
+  margin-left: 50px;
+  color: white;
+}
+
+li:hover{
+  color: #C49E0D;
+}
+
+a:hover{
+  color: #C49E0D;
+}
+
+.dropdown-menu{
+  background-color: rgb(8 32 85 / 80%); 
+}
+
+h3{
+  color: white;
+}
+
+.nav-item:hover{
+  color: #C49E0D;
+}
+
+h3:hover{
+  color: #C49E0D;
+}
+
+::-webkit-scrollbar {
+  display: none;
+}

@@ -50,7 +50,7 @@
 
 
 
-    /*
+    /*/////////////////// ESTO TIENE UNA MALA LOGICA
     if(
 
         isset($_POST["nombre"]) ||

@@ -18,6 +18,13 @@ class UsuarioControlador{
 
     }
 
+    //Log out
+    public static function logout(){
+
+        return UsuarioDAO::logout();
+
+    }
+
 }
 
 ?>

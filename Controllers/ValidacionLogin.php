@@ -10,7 +10,8 @@
         $TxtUsuario = $_POST["input_username"] ?? '';
         $TxtPassword = $_POST["input_password"] ?? '';
 
-        if (UsuarioControlador::login($TxtUsuario, $TxtPassword)) {
+
+        if(UsuarioControlador::login($TxtUsuario, $TxtPassword)){
             
             $_SESSION['usuario'] = $TxtUsuario;
 
@@ -19,7 +20,7 @@
 
         }else{
             
-            header("Location: ../Views/login.php?error=Algo salio mal");
+            header("Location: ../Views/login.php?error=Algo_salio_mal");
             exit();
         }
 

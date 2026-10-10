@@ -1,9 +1,16 @@
+﻿*{
+    font-family: roboto, sans-serif;
+}
+
 body{
-    background-color: #ece9e9ce;
+    background-size: cover;
+    background-image: url("../img/Rectoría_UAS.jpg");
+    /*background: #D8DBE2;*/
+    /*#D8DBE2 ,#D8DBE2,*/
 }
 
 nav{
-    background-color: #082055;
+    background-color: #02254F;
 }
 
 a{
@@ -23,6 +30,10 @@ li:hover{
 
 a:hover{
     color: #C49E0D;
+}
+
+h2{
+    margin-left: 10px;
 }
 
 .dropdown-menu{
@@ -45,14 +56,669 @@ h3:hover{
     display: none;
 }
 
-.carousel{
+/*.carousel{
     position: fixed;
     width: 70%;
     height: 50%;
     padding: 25px;            
-    
 }
 
 .carousel img{
     border-radius: 20px;
+}*/
+
+/*.container{
+    margin-top: 30px;
+    margin-left: 73%;
+    width: 50%;
+    height: 50%;
+    font-size: 20px;
+}
+*/
+.logo{
+    border-radius: 10px;
+}
+
+.home-carousel{
+    width: 84%;
+    max-width: 1400px;
+    margin: 2.5rem auto;
+    padding: 0;
+}
+
+.home-carousel .carousel-inner,
+.home-carousel .carousel-item{
+    height: 410px;
+}
+
+.carousel-card{
+    width: 100%;
+    height: 100%;
+    max-width: none;
+    margin: 0 auto;
+    overflow: hidden;
+    border: 1px solid rgb(255 255 255 / 55%);
+    border-radius: 1.25rem;
+    background: rgb(255 255 255 / 94%);
+    box-shadow: 0 1rem 2.5rem rgb(0 0 0 / 24%);
+}
+
+.carousel-card > .row{
+    display: grid;
+    grid-template-columns: 5fr 7fr;
+    grid-template-rows: minmax(0, 1fr);
+    height: 100%;
+    margin: 0;
+}
+
+.carousel-card > .row > [class*="col-"]{
+    width: auto;
+    max-width: none;
+    padding: 0;
+}
+
+.carousel-image-wrap{
+    height: 100%;
+    min-width: 0;
+    background: #e9eef4;
+}
+
+.carousel-image{
+    display: block;
+    width: 100%;
+    height: 100%;
+    min-height: 100%;
+    object-fit: cover;
+    object-position: center;
+}
+
+.carousel-card .card-body{
+    display: flex;
+    height: 100%;
+    flex-direction: column;
+    justify-content: center;
+    padding: clamp(1.5rem, 4vw, 3.5rem);
+}
+
+.carousel-card .card-title{
+    margin-bottom: 1rem;
+    color: #02254f;
+    font-size: clamp(1.6rem, 3vw, 2.5rem);
+    font-weight: 700;
+}
+
+.carousel-card .card-text{
+    margin: 0;
+    color: #4d5968;
+    font-size: 1.1rem;
+    line-height: 1.7;
+}
+
+.home-carousel .carousel-control-prev,
+.home-carousel .carousel-control-next{
+    width: 3rem;
+    height: 3rem;
+    top: 50%;
+    transform: translateY(-50%);
+    border-radius: 50%;
+    background: #02254f;
+    opacity: .9;
+}
+
+.home-carousel .carousel-control-prev{ left: .75rem; }
+.home-carousel .carousel-control-next{ right: .75rem; }
+
+/* Portada pública: conserva la identidad visual del panel y centra el carrusel. */
+.site-navbar{
+    min-height: 70px;
+    padding: .4rem 1.25rem;
+}
+
+.site-navbar .logo{
+    display: block;
+    width: 190px;
+    height: auto;
+}
+
+.site-navbar .navbar-nav{
+    align-items: center;
+    gap: 1.75rem;
+}
+
+.site-navbar .navbar-nav .nav-item{
+    margin: 0;
+}
+
+.site-navbar .nav-link{
+    padding: .6rem 0;
+    color: #fff;
+    font-size: 1.1rem;
+    font-weight: 600;
+}
+
+.site-navbar .nav-link:hover,
+.site-navbar .nav-link:focus{
+    color: #c49e0d;
+}
+
+.site-navbar .btn-login{
+    display: inline-block;
+    padding: .6rem 1.4rem;
+    border: 1px solid #c49e0d;
+    border-radius: .5rem;
+    color: #fff;
+    font-weight: 700;
+}
+
+.site-navbar .btn-login:hover{
+    background: #c49e0d;
+    color: #02254f;
+}
+
+.landing-main{
+    display: flex;
+    min-height: calc(100vh - 70px);
+    align-items: flex-start;
+    justify-content: center;
+    padding: 2.4rem 0 3rem;
+}
+
+.landing-main .home-carousel{
+    margin: 0 auto;
+}
+
+.carousel-card .eyebrow{
+    margin-bottom: .8rem;
+    color: #a37f00;
+    font-size: .85rem;
+    font-weight: 700;
+    letter-spacing: .12em;
+    text-transform: uppercase;
+}
+
+.carousel-cta{
+    align-self: flex-start;
+    margin-top: 1.5rem;
+    padding: .75rem 1.2rem;
+    border-color: #02254f;
+    background: #02254f;
+    font-weight: 600;
+}
+
+.carousel-cta:hover{
+    border-color: #c49e0d;
+    background: #c49e0d;
+    color: #02254f;
+}
+
+.home-carousel .carousel-indicators{
+    bottom: -2.5rem;
+}
+
+.home-carousel .carousel-indicators [data-bs-target]{
+    width: 2rem;
+    height: .25rem;
+    border: 0;
+    border-radius: 1rem;
+    background-color: #fff;
+}
+
+/* Portada pública ADIUAS */
+.landing-page{
+    min-height: 100vh;
+    margin: 0;
+    background: #fff;
+    color: #12345b;
+    font-family: Arial, Roboto, sans-serif;
+}
+
+.landing-page a{
+    text-decoration: none;
+}
+
+.institutional-header{
+    display: flex;
+    min-height: 76px;
+    align-items: center;
+    gap: 1rem;
+    padding: .5rem max(5vw, 1.5rem);
+    background: linear-gradient(105deg, #0b4b9b, #1c66ae);
+    color: #fff;
+}
+
+.secretariat-mark{
+    display: grid !important;
+    width: 46px;
+    height: 52px;
+    flex: 0 0 46px;
+    place-items: center;
+    overflow: hidden;
+    border-radius: .35rem;
+    background: #fff;
+}
+
+.secretariat-mark img{
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+
+.institutional-title{
+    display: flex;
+    flex: 1;
+    flex-direction: column;
+    line-height: 1.25;
+}
+
+.institutional-title span{
+    font-size: .75rem;
+}
+
+.institutional-title strong{
+    font-size: 1rem;
+}
+
+.institutional-logos{
+    display: flex;
+    align-items: center;
+    gap: .5rem;
+}
+
+.institutional-logos img{
+    width: auto;
+    height: 42px;
+    padding: .2rem;
+    border-radius: .2rem;
+    background: #fff;
+    object-fit: contain;
+}
+
+.university-ribbon{
+    padding: .25rem 1rem;
+    background: #2879b9;
+    color: #dcecff;
+    font-size: .56rem;
+    font-weight: 700;
+    letter-spacing: .55em;
+    text-align: center;
+}
+
+.program-nav{
+    background: #c4a52a;
+}
+
+.program-nav-inner{
+    display: flex;
+    min-height: 42px;
+    align-items: center;
+    gap: clamp(.7rem, 2vw, 1.8rem);
+    padding: .35rem max(5vw, 1.5rem);
+}
+
+.program-nav-inner a{
+    display: inline-block;
+    color: #172f4c;
+    font-size: .78rem;
+    font-weight: 600;
+}
+
+.program-nav-inner a:hover{
+    color: #fff;
+}
+
+.program-nav-inner .nav-login{
+    margin-left: auto;
+    padding: .5rem 1rem;
+    border-radius: .35rem;
+    background: #083e83;
+    color: #fff;
+}
+
+.program-nav-inner .nav-login:hover{
+    background: #02254f;
+}
+
+.program-hero{
+    position: relative;
+    overflow: hidden;
+    padding: clamp(2.5rem, 5vw, 4.5rem) max(9vw, 2rem);
+    background: linear-gradient(112deg, #0b4b9b 0%, #1761ad 68%, #2472b6 100%);
+    color: #fff;
+}
+
+.hero-content{
+    position: relative;
+    z-index: 1;
+    max-width: 760px;
+}
+
+.hero-kicker,
+.section-kicker{
+    margin: 0 0 .65rem;
+    color: #f0d66d;
+    font-size: .7rem;
+    font-weight: 800;
+    letter-spacing: .17em;
+    text-transform: uppercase;
+}
+
+.program-hero h1{
+    max-width: 720px;
+    margin: 0 0 .9rem;
+    color: #fff;
+    font-size: clamp(2rem, 4vw, 3.2rem);
+    font-weight: 800;
+    line-height: 1.12;
+}
+
+.hero-description{
+    max-width: 680px;
+    margin: 0;
+    color: #f2f7ff;
+    font-size: 1.05rem;
+    line-height: 1.7;
+}
+
+.uas-quote{
+    max-width: 670px;
+    margin: 1.5rem 0 1.2rem;
+    padding: 1rem 1.25rem;
+    border-left: 4px solid #e0c64a;
+    border-radius: 0 .7rem .7rem 0;
+    background: rgb(3 38 86 / 48%);
+}
+
+.uas-quote p{
+    margin: 0 0 .35rem;
+    font-size: clamp(1.2rem, 2vw, 1.65rem);
+    font-weight: 800;
+}
+
+.uas-quote cite{
+    color: #dceaff;
+    font-size: .78rem;
+    font-style: normal;
+}
+
+.hero-actions{
+    display: flex;
+    align-items: center;
+    gap: .65rem;
+}
+
+.hero-actions a{
+    display: inline-block;
+    padding: .65rem 1.1rem;
+    border: 1px solid #fff;
+    border-radius: .4rem;
+    font-size: .85rem;
+    font-weight: 700;
+}
+
+.hero-actions .action-primary{
+    border-color: #fff;
+    background: #fff;
+    color: #0b4b9b;
+}
+
+.hero-actions .action-secondary{
+    color: #fff;
+}
+
+.hero-actions a:hover{
+    border-color: #e0c64a;
+    background: #e0c64a;
+    color: #082b57;
+}
+
+.hero-seal{
+    position: absolute;
+    right: 9%;
+    bottom: -2.8rem;
+    color: rgb(255 255 255 / 7%);
+    font-size: clamp(7rem, 18vw, 17rem);
+    font-weight: 900;
+    letter-spacing: -.1em;
+    line-height: 1;
+    pointer-events: none;
+}
+
+.program-section{
+    max-width: 1280px;
+    margin: 0 auto;
+    padding: 3rem max(5vw, 1.5rem) 4rem;
+}
+
+.program-section .section-kicker{
+    color: #a27d00;
+}
+
+.section-heading h2,
+.audience-section h2{
+    margin: 0 0 .7rem;
+    color: #0b4b9b;
+    font-size: clamp(1.5rem, 2.5vw, 2.1rem);
+    font-weight: 800;
+    line-height: 1.2;
+}
+
+.section-intro{
+    max-width: 850px;
+    margin: 0;
+    color: #43566e;
+    font-size: .98rem;
+    line-height: 1.7;
+}
+
+.service-grid{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 1rem;
+    margin-top: 1.5rem;
+}
+
+.service-card{
+    min-height: 190px;
+    padding: 1.25rem;
+    border: 1px solid #d9e2ef;
+    border-radius: .75rem;
+    background: #fff;
+    box-shadow: 0 .4rem 1.2rem rgb(13 45 82 / 9%);
+}
+
+.service-number{
+    display: inline-block;
+    margin-bottom: .8rem;
+    color: #a27d00;
+    font-size: .72rem;
+    font-weight: 800;
+    letter-spacing: .12em;
+}
+
+.service-card h3{
+    margin: 0 0 .5rem;
+    color: #0b4b9b;
+    font-size: 1.02rem;
+    font-weight: 800;
+    line-height: 1.35;
+}
+
+.service-card p{
+    margin: 0;
+    color: #43566e;
+    font-size: .9rem;
+    line-height: 1.55;
+}
+
+.audience-section{
+    margin-top: 2.25rem;
+}
+
+.audience-section h2{
+    margin-bottom: .9rem;
+    font-size: 1.15rem;
+}
+
+.audience-grid{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(210px, 1fr));
+    gap: .6rem;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.audience-grid li{
+    display: flex;
+    min-height: 58px;
+    align-items: center;
+    margin: 0;
+    padding: .7rem .9rem;
+    border: 1px solid #d9e2ef;
+    border-radius: .5rem;
+    background: #f4f7fb;
+    color: #183a61;
+    font-size: .86rem;
+    line-height: 1.4;
+}
+
+.site-footer{
+    padding: 1.2rem 5vw;
+    background: #02254f;
+    color: #dceaff;
+    font-size: .8rem;
+    text-align: center;
+}
+
+/* Variante visual en azul marino para la portada pública. */
+.landing-page{
+    background: #f4f7fb;
+    color: #102b4e;
+}
+
+.institutional-header{
+    background: linear-gradient(110deg, #031a38 0%, #062b5a 55%, #0a3a73 100%);
+}
+
+.university-ribbon{
+    background: #02254f;
+    color: #d9c46c;
+}
+
+.program-nav{
+    border-bottom: 3px solid #c49e0d;
+    background: #09284f;
+}
+
+.program-nav-inner a{
+    color: #e8eef7;
+}
+
+.program-nav-inner a:hover{
+    color: #e4c74e;
+}
+
+.program-nav-inner .nav-login{
+    border: 1px solid #c49e0d;
+    background: #c49e0d;
+    color: #071f3e;
+}
+
+.program-nav-inner .nav-login:hover{
+    border-color: #e4c74e;
+    background: #e4c74e;
+    color: #071f3e;
+}
+
+.program-hero{
+    min-height: 360px;
+    background:
+        radial-gradient(ellipse at 82% 48%, rgb(31 91 157 / 44%), transparent 32%),
+        linear-gradient(120deg, #031a38 0%, #062b5a 62%, #0a3a73 100%);
+}
+
+.hero-kicker{
+    color: #e4c74e;
+}
+
+.uas-quote{
+    border-left-color: #c49e0d;
+    background: rgb(0 12 29 / 46%);
+    box-shadow: 0 12px 32px rgb(0 0 0 / 12%);
+}
+
+.hero-seal{
+    right: 8%;
+    bottom: -3.2rem;
+    color: rgb(220 235 255 / 9%);
+    text-shadow: 0 0 45px rgb(218 232 255 / 8%);
+}
+
+.program-section{
+    max-width: 1320px;
+    padding-top: 3.5rem;
+}
+
+.program-section .section-kicker{
+    color: #9b7900;
+}
+
+.section-heading h2,
+.audience-section h2{
+    color: #062b5a;
+}
+
+.service-card{
+    position: relative;
+    min-height: 205px;
+    overflow: hidden;
+    border-color: #d6e0ed;
+    border-radius: .85rem;
+    box-shadow: 0 10px 28px rgb(5 34 69 / 8%);
+    transition: transform .2s ease, box-shadow .2s ease, border-color .2s ease;
+}
+
+.service-card::before{
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 0;
+    height: 4px;
+    background: linear-gradient(90deg, #082e60, #c49e0d);
+    content: "";
+}
+
+.service-card:hover{
+    transform: translateY(-4px);
+    border-color: #b8c9df;
+    box-shadow: 0 16px 34px rgb(5 34 69 / 14%);
+}
+
+.service-number{
+    color: #a07c00;
+}
+
+.service-card h3{
+    color: #082e60;
+}
+
+.audience-grid li{
+    border-color: #d1dceb;
+    background: #fff;
+    color: #17385f;
+}
+
+.audience-grid li::before{
+    width: 7px;
+    height: 7px;
+    flex: 0 0 7px;
+    margin-right: .65rem;
+    border-radius: 50%;
+    background: #c49e0d;
+    content: "";
+}
+
+.site-footer{
+    border-top: 3px solid #c49e0d;
+    background: #031a38;
 }

@@ -16,6 +16,7 @@ class UsuarioDAO extends Conexion{
 
     }
 
+
     //El metodo para la desconexion
     private static function desconectar(){
 
@@ -27,25 +28,21 @@ class UsuarioDAO extends Conexion{
     //Metodo de para poder logearse
     public static function login($Usuario){
       
-        $Query = "SELECT * FROM users WHERE usuario = :usuario AND pass = :password";
+        $Query = "SELECT * FROM users WHERE usuario = :usuario";
 
         self::getConexion();
-
-       
-        $Resultado = self::$Conexion->prepare($Query);
-
-        
+   
+        $Resultado = self::$Conexion->prepare($Query);   
         $Resultado->bindValue(":usuario", $Usuario->getUsuario());
-        $Resultado->bindValue(":password", $Usuario->getPassword());
 
         $Resultado->execute();
 
-        if($Resultado->rowCount() > 0){
+        $ArrayUsuario = $Resultado->fetch(PDO::FETCH_ASSOC);
 
-            $Derechos = $Resultado->fetch(PDO::FETCH_ASSOC);
+        if($ArrayUsuario['usuario'] && password_verify($Usuario->getPassword(), $ArrayUsuario['pass'])){
 
             session_start();
-            $_SESSION['admin'] = $Derechos['admin'];
+            $_SESSION['admin'] = $ArrayUsuario['admin'];
 
             return TRUE;
 
@@ -53,6 +50,39 @@ class UsuarioDAO extends Conexion{
 
 
     
+    }
+
+
+    //Cerrar sesion
+    public static function logout(){
+
+        session_start();
+        $_SESSION = array();
+
+        if(ini_get("session.use_cookies")){
+
+            $params = session_get_cookie_params();
+
+            setcookie(
+
+                session_name(), 
+                '', 
+                time() - 42000,
+                $params["path"], 
+                $params["domain"],
+                $params["secure"], 
+                $params["httponly"]
+
+            );
+
+        }
+
+        session_destroy();
+
+        header("Location: ../Views/login.php");
+        exit();
+
+
     }
 
 }
