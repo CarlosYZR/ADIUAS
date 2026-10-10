@@ -1,0 +1,326 @@
+* {
+    box-sizing: border-box;
+    transition: all 0.4s ease;
+    font-family: Arial, Roboto, sans-serif;
+}
+
+::-webkit-scrollbar{
+    display: none;
+}
+
+body {
+    min-height: 100vh;
+    margin: 0;
+    background: #f3f6fb;
+    color: #102b4e;
+    font-family: Arial, Roboto, sans-serif;
+}
+
+a{
+    text-decoration: none
+}
+
+.site-header {
+    width: 100%
+}
+
+.institutional-header {
+    display: flex;
+    min-height: 160px;
+    align-items: center;
+    gap: 1.25rem;
+    padding: 1rem clamp(2rem, 7vw, 7rem);
+    background: linear-gradient(110deg, #031a38, #062b5a 62%, #0a3a73);
+    color: #fff;
+}
+
+.secretariat-mark {
+    display: grid;
+    width: 100px;
+    height: 104px;
+    flex: 0 0 100px;
+    place-items: center;
+    overflow: hidden;
+    border-radius: .45rem;
+}
+
+.secretariat-mark img {
+    width: 100%;
+    height: 100%;
+}
+
+.institutional-title {
+    display: flex;
+    flex: 1;
+    flex-direction: column;
+    line-height: 1.3
+}
+
+.institutional-title span {
+    font-size: 1.05rem;
+    color: #d9e6f5
+}
+
+.institutional-title strong {
+    font-size: 32px;
+    font-weight: 750
+}
+
+.institutional-logos {
+    display: flex;
+    align-items: center;
+    gap: .65rem
+}
+
+.institutional-logos img {
+    width: 170px;
+    height: 85px;
+    padding: .3rem;
+    border-radius: .3rem;
+    background: #fff;
+    object-fit: contain;
+}
+
+.university-ribbon {
+    padding: .45rem 1rem;
+    background: #02254f;
+    color: #e4c74e;
+    font-size: .65rem;
+    font-weight: 800;
+    letter-spacing: .55em;
+    text-align: center;
+}
+
+.program-nav {
+    border-bottom: 3px solid #c49e0d;
+    background: #09284f
+}
+
+.program-nav-inner {
+    display: flex;
+    min-height: 54px;
+    align-items: center;
+    gap: clamp(1rem, 2.5vw, 2.25rem);
+    padding: .45rem clamp(2rem, 7vw, 7rem);
+}
+
+.program-nav-inner a {
+    display: inline-block;
+    color: #edf3fb;
+    font-size: .88rem;
+    font-weight: 650;
+    transition: color .18s ease, background .18s ease;
+}
+
+.program-nav-inner a:hover {
+    color: #e4c74e
+}
+
+.program-nav-inner .nav-login {
+    margin-left: auto;
+    padding: .65rem 1.1rem;
+    border: 1px solid #c49e0d;
+    border-radius: .4rem;
+    background: #c49e0d;
+    color: #071f3e;
+}
+
+.program-nav-inner .nav-login:hover {
+    background: #e4c74e;
+    color: #071f3e
+}
+
+.program-hero {
+    position: relative;
+    min-height: 350px;
+    overflow: hidden;
+    padding: clamp(3rem, 5vw, 4.5rem) clamp(2rem, 9vw, 9rem);
+    background:
+        linear-gradient(105deg, rgb(3 26 56 / 88%), rgb(6 43 90 / 76%) 62%, rgb(10 58 115 / 68%)),
+        url("../img/Rectoría_UAS.jpg") center / cover no-repeat;
+    color: #fff;
+}
+
+.hero-content {
+    position: relative;
+    z-index: 1;
+    max-width: 730px;
+}
+
+.program-hero h1 {
+    max-width: 710px;
+    margin: 0 0 .9rem;
+    color: #9b7900;
+    font-size: 50px;
+    font-weight: 850;
+    line-height: 1.1;
+}
+
+.hero-description {
+    max-width: 680px;
+    margin: 0;
+    color: #eff5ff;
+    font-size: 20px;
+    line-height: 1.7
+}
+
+.uas-quote {
+    max-width: 670px;
+    margin: 1.5rem 0 1.2rem;
+    padding: 1rem 1.3rem;
+    border-left: 4px solid #c49e0d;
+    border-radius: 0 .7rem .7rem 0;
+    background: rgb(0 12 29 / 48%);
+}
+
+.uas-quote p {
+    margin: 0 0 .35rem;
+    font-size: clamp(1.25rem, 2vw, 1.7rem);
+    font-weight: 800;
+    font-style: italic;
+}
+
+.hero-actions {
+    display: flex;
+    align-items: center;
+    gap: .7rem
+}
+
+.hero-actions a {
+    display: inline-block;
+    padding: .7rem 1.15rem;
+    border: 1px solid #9b7900;
+    border-radius: .4rem;
+    font-size: .88rem;
+    font-weight: 750;
+}
+
+.hero-actions .action-secondary {
+    color:#fff;
+    font-size: 20px;
+    background: #9b7900;
+}
+
+.hero-actions a:hover {
+    border-color: #9b7900;
+    background:#c49e0d;
+    color: #fff;
+}
+
+.hero-seal {
+    position: absolute;
+    right: 8%;
+    bottom: -3.4rem;
+    color: rgb(220 235 255 / 9%);
+    font-size: clamp(8rem, 18vw, 17rem);
+    font-weight: 900;
+    letter-spacing: -.1em;
+    line-height: 1;
+    pointer-events: none;
+}
+
+.program-section {
+    max-width: 1320px;
+    margin: auto;
+    padding: 3rem clamp(2rem, 7vw, 7rem) 4rem
+}
+
+.program-section {
+    color: #9b7900
+}
+
+.section-heading h1{
+    margin: 0 0 .7rem;
+    color: #062b5a;
+    font-size: 50px;
+    font-weight: 800;
+    line-height: 1.2
+}
+
+.audience-section h2 {
+    margin: 0 0 .7rem;
+    color: #062b5a;
+    font-size: clamp(1.6rem, 2.5vw, 2.15rem);
+    font-weight: 800;
+    line-height: 1.2
+}
+
+.section-intro {
+    max-width: 880px;
+    margin: 0;
+    color: #43566e;
+    font-size: 25px;
+    line-height: 1.7
+}
+
+.service-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 1rem;
+    margin-top: 1.5rem
+}
+
+.service-card {
+    position: relative;
+    min-height: 195px;
+    overflow: hidden;
+    padding: 1.3rem;
+    border: 1px solid #d6e0ed;
+    border-radius: .8rem;
+    background: #fff;
+    box-shadow: 0 10px 28px rgb(5 34 69 / 8%);
+    transition: transform .2s ease, box-shadow .2s ease;
+}
+
+.service-card::before {
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 0;
+    height: 4px;
+    background: linear-gradient(90deg, #082e60, #c49e0d);
+    content: ""
+}
+
+.service-card:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 16px 34px rgb(5 34 69 / 14%)
+}
+
+.service-number {
+    display: inline-block;
+    margin-bottom: .8rem;
+    color: #9b7900;
+    font-size: .75rem;
+    font-weight: 850;
+    letter-spacing: .12em
+}
+
+.service-card h3 {
+    margin: 0 0 .5rem;
+    color: #082e60;
+    font-size: 20px;
+    font-weight: 800;
+    line-height: 1.35
+}
+
+.service-card p {
+    margin: 0;
+    color: #43566e;
+    font-size: .9rem;
+    line-height: 1.55
+}
+
+.site-footer {
+    padding: 1.2rem 5vw;
+    border-top: 3px solid #c49e0d;
+    background: #031a38;
+    color: #dceaff;
+    font-size: .82rem;
+    text-align: center
+}
+
+.program-hero {
+    background-size: auto, 115% auto;
+    background-position: center, left center;
+}

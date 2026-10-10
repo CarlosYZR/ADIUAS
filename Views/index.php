@@ -4,9 +4,9 @@ include("../Controllers/UsuarioControlador.php");
 
 session_start();
 
-if (empty($_SESSION['usuario'])) {
+if (!isset($_SESSION['usuario'])) {
 
-    header("Location: login.php");
+    header("Location: ./login.php");
     exit();
 
 }
@@ -31,7 +31,7 @@ if (empty($_SESSION['usuario'])) {
 
     <nav class="navbar navbar-expand-lg">
         <div class="container-fluid">
-            <a class="navbar-brand" href="../index.html"><img src="../assets/img/adiuas.png" class="logo" height="77px"
+            <a class="navbar-brand" href="../Controllers/CerrarSesion.php"><img src="../assets/img/adiuas.png" class="logo" height="77px"
                     width="200px"></a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
                 data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
@@ -156,64 +156,72 @@ if (empty($_SESSION['usuario'])) {
                 <a href="../Controllers/CerrarSesion.php">
                     <h2><?php echo (strtoupper($_SESSION['usuario'])); ?></h2>
                 </a>
-                
+
     </nav>
 
 
-    <div id="carouselExampleSlidesOnly" class="carousel slide" data-bs-ride="carousel">
+    <div id="carouselExampleFade" class="carousel slide carousel-fade home-carousel" data-bs-ride="carousel">
         <div class="carousel-inner">
 
             <div class="carousel-item active">
-                <div class="card mb-3" style="max-width: 70%; min-height: 50%;">
-                <div class="row g-0">
-                    <div class="col-md-4">
-                    <img src="../Assets/img/Carrusel-banner.png" class="img-fluid rounded-start" alt="..." style="width:120%">
+                <div class="card carousel-card">
+                    <div class="row g-0 h-100">
+                        <div class="col-md-5 carousel-image-wrap">
+                            <img src="../Assets/img/Carrusel-banner.png" class="carousel-image" alt="Atención a la diversidad">
+                        </div>
+                        <div class="col-md-7">
+                            <div class="card-body">
+                                <h1 class="card-title">ATENCION A LA DIVERSIDAD</h1>
+                                <p class="card-text">This is a wider card with supporting text below as a natural
+                                    lead-in to additional content. This content is a little bit longer.</p>
+                            </div>
+                        </div>
                     </div>
-                    <div class="col-md-8">
-                    <div class="card-body">
-                        <h1 class="card-title">ATENCION A LA DIVERSIDAD</h1>
-                        <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-                    </div>
-                    </div>
-                </div>
                 </div>
             </div>
 
             <div class="carousel-item">
-                <div class="card mb-3" style="max-width: 70%; min-height: 50%;">
-                <div class="row g-0">
-                    <div class="col-md-4">
-                    <img src="../Assets/img/carousel.jpg" class="img-fluid rounded-start" alt="...">
+                <div class="card carousel-card">
+                    <div class="row g-0 h-100">
+                        <div class="col-md-5 carousel-image-wrap">
+                            <img src="../Assets/img/carousel.jpg" class="carousel-image" alt="Atención a la diversidad">
+                        </div>
+                        <div class="col-md-7">
+                            <div class="card-body">
+                                <h1 class="card-title">ATENCION A LA DIVERSIDAD</h1>
+                                <p class="card-text">This is a wider card with supporting text below as a natural
+                                    lead-in to additional content. This content is a little bit longer.</p>
+                            </div>
+                        </div>
                     </div>
-                    <div class="col-md-8">
-                    <div class="card-body">
-                        <h1 class="card-title">ATENCION A LA DIVERSIDAD</h1>
-                        <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-                    </div>
-                    </div>
-                </div>
                 </div>
             </div>
 
             <div class="carousel-item">
-                <div class="card mb-3" style="max-width: 70%; min-height: 50%;">
-                <div class="row g-0">
-                    <div class="col-md-4">
-                    <img src="../Assets/img/carousel2.jpg" class="img-fluid rounded-start" alt="...">
+                <div class="card carousel-card">
+                    <div class="row g-0 h-100">
+                        <div class="col-md-5 carousel-image-wrap">
+                            <img src="../Assets/img/carousel2.jpg" class="carousel-image" alt="Atención a la diversidad">
+                        </div>
+                        <div class="col-md-7">
+                            <div class="card-body">
+                                <h1 class="card-title">Atencion a la diversidad</h1>
+                                <p class="card-text">This is a wider card with supporting text below as a natural
+                                    lead-in to additional content. This content is a little bit longer.</p>
+                            </div>
+                        </div>
                     </div>
-                    <div class="col-md-8">
-                    <div class="card-body">
-                        <h1 class="card-title">Atencion a la diversidad</h1>
-                        <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-                    </div>
-                    </div>
-                </div>
                 </div>
             </div>
 
         </div>
+
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+        </button>
     </div>
-    
+
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"

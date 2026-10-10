@@ -1,50 +1,73 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>ADIUAS | ATENCION A LA DIVERSIDAD</title>
+    <meta name="theme-color" content="#071f3e">
+    <meta name="description" content="Programa de Atención a la Diversidad de la Universidad Autónoma de Sinaloa.">
+    <title>ADIUAS</title>
     <link rel="shortcut icon" href="Assets/img/Logo_Uas.ico">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
-    <link rel="stylesheet" href="Assets/css/DashBoard.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <link rel="stylesheet" href="Assets/css/dashbord.css">
 </head>
 <body>
-    
-    <nav class="navbar navbar-expand-lg">
-        <div class="container-fluid">
-            <a class="navbar-brand" href="#"><img src="Assets/img/adiuas.png" class="logo" height="77px" width="200px"></a>
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-                <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                    <li class="nav-item">
-                        <a href=""><h2 class="item">¿Quienes Somos?</h2></a>
-                    </li>
 
-                    <li class="nav-item">
-                        <a href="Views/informes.php"><h2 class="item">Contacto</h2></a>
-                    </li>
-                    
-      
-                </ul>
-                    <a href="">Hola</a>
-                <a href="Views/login.php">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" fill="currentColor" class="bi bi-person-fill" viewBox="0 0 16 16">
-                        <path d="M3 14s-1 0-1-1 1-4 6-4 6 3 6 4-1 1-1 1zm5-6a3 3 0 1 0 0-6 3 3 0 0 0 0 6"/>
-                    </svg>
-                </a> &nbsp;&nbsp;&nbsp;
-            <a href="Views/login.php"><h2>ACCEDER</h2></a>
-    </nav>
+    <header class="site-header">
+        <div class="institutional-header">
+            <a class="secretariat-mark" href="index.html" aria-label="Inicio ADIUAS">
+                <img src="Assets/img/Logo_Uas.png" alt="UAS">
+            </a>
+            <div class="institutional-title">
+                <span>Universidad Autónoma de Sinaloa</span>
+                <strong>Programa de Atención a la Diversidad · ADIUAS</strong>
+            </div>
+            <div class="institutional-logos" aria-label="Logotipos institucionales">
+                <img src="Assets/img/adiuas_2.png" alt="ADIUAS" class="adiuas-logo">
+            </div>
+        </div>
+        <nav class="program-nav" aria-label="Navegación principal">
+            <!--<div class="program-nav-inner">
+                <a href="#programa">El programa</a>
+                <a href="#acompanamiento">Regiones</a>
+                <a class="nav-login" href="Views/login.php">Iniciar sesión</a>
+            </div>-->
+        </nav>
+    </header>
 
+    <main>
+        <section class="program-hero" aria-labelledby="hero-title">
+            <div class="hero-content">
+                <h1 id="hero-title">Programa de Atención a la Diversidad ADIUAS</h1>
+                <p class="hero-description">
+                    La Universidad Autónoma de Sinaloa, en coordinación con Secretaría Académica Universitaria y a través del Programa ADIUAS, responde a las necesidades sociales con calidad educativa, y con ello estar a la vanguardia de las políticas internacionales y nacionales en el tema de educación como una prioridad institucional.
+                </p>
+                <blockquote class="uas-quote">
+                    <p>"eliminando las barreras para el aprendizaje y apoyando la formación integral e inclusiva"</p>
+                </blockquote>
+                <div class="hero-actions">
+                    <a class="action-secondary" href="Views/login.php">Iniciar sesión</a>
+                </div>
+            </div>
+            <div class="hero-seal" aria-hidden="true">ADIUAS</div>
+        </section>
 
-    
-    <div class="parent">
-            <div class="div2"><h1>ADIUAS</h1></div>
-    </div>
-    
-
-
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+        <section class="program-section" id="programa">
+            <div class="section-heading">
+                <h1>Nadie se queda fuera de la Universidad</h1>
+                <p class="section-intro">La Universidad Autónoma de Sinaloa (UAS), a través de la Secretaría Académica de la Universidad (SAU) y el Programa de Atención a la Diversidad (ADI-UAS), invita las diversas actividades y eventos que se estarás desarrollando en los próximos días en la Jornada de Inclusión y Accesibilidad, dentro del marco del Día Internacional de las Personas con Discapacidad. </p>
+            </div>
+            <div class="service-grid" id="servicios">
+                <article class="service-card"><span class="service-number"></span><h3>Identificación y perfil de apoyo</h3><p>Conocemos las necesidades de cada estudiante y construimos su perfil de apoyo, con los ajustes razonables que requiere.</p></article>
+                <article class="service-card"><span class="service-number"></span><h3>Tutoría de apoyo especializado</h3><p>Una tutora o un tutor de apoyo especializado da seguimiento al plan en su propia unidad académica.</p></article>
+                <article class="service-card"><span class="service-number"></span><h3>Red de apoyo</h3><p>Docentes, familias y asesores se suman al plan con orientaciones claras sobre qué hacer.</p></article>
+                <article class="service-card"><span class="service-number"></span><h3>Formación docente</h3><p>Cursos y actividades para construir clases, materiales y evaluaciones accesibles.</p></article>
+            </div>
+            
+        </section>
+    </main>
+    <footer class="site-footer">ADIUAS · Universidad Autónoma de Sinaloa</footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
 </body>
 </html>
