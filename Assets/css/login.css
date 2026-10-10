@@ -125,12 +125,12 @@ body::before{
 .form-floating > .form-control:focus{
     border-color:var(--uas-blue);
     background:#fff;
-    box-shadow:0 0 0 .22rem rgb(11 55 109 / 14%);
+    box-shadow: none;
 }
 
 .form-floating > label{
     padding:1.1rem .9rem;
-    color:#60748b;
+    color:var(--orange);
 }
 
 .form-container .btn{
